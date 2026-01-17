@@ -1,5 +1,5 @@
-import './css/globals.css';  // <- Import global CSS
-import Navbar from './navbar/navbar.jsx';
+import '../css/globals.css';  // <- Import global CSS
+import Navbar from '../navbar/navbar';
 
 export const metadata = {
   title: 'Next.js',

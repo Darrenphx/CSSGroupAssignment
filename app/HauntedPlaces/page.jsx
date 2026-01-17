@@ -1,3 +1,7 @@
+import React from "react";
+import Image from "next/image";
+import styles from "./page.module.css";
+
 export default function Places(){  const hauntedPlaces = [
     {
       name: "Salem, Massachusetts",
@@ -29,13 +33,11 @@ export default function Places(){  const hauntedPlaces = [
 
    return (
     <div style={{
-        position: "absolute",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "70px",
-        background: "linear-gradient(to right, #4a6fa5, #888)",
-      }}>
+    width: "100%",
+    background: "linear-gradient(to right, #4a6fa5, #888)",
+    padding: "2rem 0",
+        }}>
+
       <h1 style={{
         textAlign: "center",
         margin: "5rem ",
