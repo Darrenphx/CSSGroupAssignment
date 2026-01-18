@@ -7,7 +7,7 @@ Firstly install required dependencies
 npm i react-snowfall
 ```
 
-First, run the development server:
+Secondly, run the development server:
 
 ```bash
 npm run dev
