@@ -2,6 +2,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+Firstly install required dependencies
+```bash
+npm i react-snowfall
+```
+
 First, run the development server:
 
 ```bash
