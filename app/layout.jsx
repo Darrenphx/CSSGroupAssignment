@@ -1,5 +1,6 @@
 import './css/globals.css';
 import Navbar from './navbar/navbar';
+import SnowfallClient from './snowflake/snowflake';
 
 export const metadata = {
   title: 'Next.js',
@@ -10,7 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        
         <Navbar />
+        <SnowfallClient/>
         <main>{children}</main>
       </body>
     </html>

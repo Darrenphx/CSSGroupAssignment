@@ -13,7 +13,7 @@ export default function Page() {
           style={{ objectFit: "cover" }}
           priority
         />
-        <h1 className={styles.headertitle}>Paranomal</h1>
+        <h1 className={styles.headertitle}>Paranormal</h1>
         <div className={styles.scrolldown}>Scroll down</div>
       </div>
     </main>
