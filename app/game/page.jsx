@@ -17,10 +17,19 @@ function Header(){
     return(
         <div className={styles.header}>
             <h2 className={styles.titleheader1}>Step Into the Paranormal</h2>
+             <div className={styles.headerpic}>
+                <Image 
+                    src = "/photos/top-view-vodoo-doll-pins-arrangement.jpg"
+                    alt = "header pic"
+                    width = "400"
+                    height = "255"        
+                />
+            </div>
             <h3 className={styles.titleheader2}>
   Paranormal games immerse players in haunted worlds, psychological horror,
   and terrifying encounters. Here are the top 5 that defined the genre.
             </h3>
+            
         </div>
     )
 }
@@ -102,7 +111,7 @@ function Game4(){
             <div className={styles.gameimage}>
                 <Image 
                     src = "/photos/elevator.png"
-                    alt = "elevatorr"
+                    alt = "elevator"
                     width = "400"
                     height = "255"        
                 />
@@ -112,7 +121,7 @@ function Game4(){
                 <h2 className={styles.game1textheader}>🛗 The Elevator Game</h2>
                 <h3 className={styles.game1text}> 
                     The Elevator Game is a mysterious ritual said to transport players to another dimension. Originating from urban legends, the game involves riding an elevator alone in a precise sequence of floors while following strict rules. Breaking the rules is said to bring terrifying consequences.
-                    Players report eerie sensations, sudden appearances of shadowy figures, or glimpses of a parallel world. The Elevator Game blends suspense, fear, and curiosity, making it one of the most unnerving paranormal experiences to attempt—but only for the brave. </h3>
+                    Players report eerie sensations, sudden appearances of shadowy figures, or glimpses of a parallel world. The Elevator Game blends suspense, fear, and curiosity, making it one of the most unnerving paranormal experiences to attempt—but only for the bravest of the brave </h3>
             </div>
         </div> 
     );
@@ -124,18 +133,18 @@ function Game5(){
         <div className={styles.game}>
             <div className={styles.gameimage}>
                 <Image 
-                    src = "/photos/elevator.png"
-                    alt = "elevatorr"
+                    src = "/photos/fourcorners.png"
+                    alt = "four corners"
                     width = "400"
                     height = "255"        
                 />
             </div>
 
             <div className={styles.gamedetails}>
-                <h2 className={styles.game1textheader}>🛗 The Elevator Game</h2>
+                <h2 className={styles.game1textheader}>🧱 The Corner Game</h2>
                 <h3 className={styles.game1text}> 
-                    The Elevator Game is a mysterious ritual said to transport players to another dimension. Originating from urban legends, the game involves riding an elevator alone in a precise sequence of floors while following strict rules. Breaking the rules is said to bring terrifying consequences.
-                    Players report eerie sensations, sudden appearances of shadowy figures, or glimpses of a parallel world. The Elevator Game blends suspense, fear, and curiosity, making it one of the most unnerving paranormal experiences to attempt—but only for the brave. </h3>
+                    The Corner Game is a haunting ritual rooted in urban legend, said to summon unseen entities through silence and isolation. Players must stand alone in a dark room, facing a corner while following a strict set of rules and spoken phrases.
+                    Any mistake is believed to invite something unwanted into the space. Those who attempt the ritual report whispers, sudden chills, and the unsettling feeling of being watched. The Corner Game relies on fear, focus, and darkness, making it one of the most unsettling and distrubing paranormal rituals ever shared.</h3>
             </div>
         </div> 
     );
@@ -154,6 +163,8 @@ export default function Game(){
                 <Game1/>
                 <Game2/>
                 <Game3/>
+                <Game4/>
+                <Game5/>
                
 
             </div>
