@@ -5,6 +5,9 @@
  margin:0px;
  padding:0px;
  height:10vh;
+ position: sticky;
+ top: 0;
+ z-index: 1000;
  
 }
 .navitem {
@@ -16,9 +19,56 @@
   text-decoration: none;
   font-weight: bold;
   font-size:20px;
+  background:none;
+  border:none;
+  cursor:pointer;
  
 }
 .navitem:hover {
  background-color: #ddd;
  color: black;
+}
+
+.dropdown{
+  flex:1;
+  display:flex;
+  position:relative;
+  
+}
+
+.dropdownmenu{
+  position:absolute;
+  top:100%;
+  left:0;
+  background-color: black;
+  display:flex;
+  flex-direction:column;
+  min-width:100%;
+  left:0;
+  z-index: 10;
+  border-bottom: 1px solid #6f6f6f;
+  
+  
+  
+  
+}
+
+.dropdownitem{
+  text-decoration: none;
+  color:white;
+  
+  padding: 12px 16px;
+  height:5vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-bottom: 1px solid #6f6f6f;
+  background-color: #000;
+
+
+}
+
+.dropdownitem:hover{
+  background-color: #ddd;
+  color: black;
 }
