@@ -151,7 +151,22 @@ function Game5(){
 
 }
 
+function IFrame(){
+    return(
+        <div>
+            <h1 className={styles.titleheader1}> View more Paranormal Games </h1>
+             <p className={styles.videocredit}> Source: YouTube — MostAmazingTop10 </p>
+            <div className={styles.video}>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VoRjkk8YFRo?si=srRspHcQ9Kq-12w4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+
+            </div>
+            
+
+        </div>
+
+    );
+}
 
 
 export default function Game(){
@@ -165,6 +180,7 @@ export default function Game(){
                 <Game3/>
                 <Game4/>
                 <Game5/>
+                <IFrame/>
                
 
             </div>
