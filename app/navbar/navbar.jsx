@@ -10,6 +10,7 @@ export default function Navbar(){
     <nav className={styles.navbar}>
     <Link className={styles.navitem} href="/"> Home </Link>
     <Link className={styles.navitem} href="/haunted_places"> Haunted Places </Link>
+    <Link className={styles.navitem} href="/ghost_equipment"> Ghost Equipment </Link>
     <Link className={styles.navitem} href="/game"> Games </Link>
     <div className={styles.dropdown}
     onMouseEnter={()=> setdropdownvisible(true)}
