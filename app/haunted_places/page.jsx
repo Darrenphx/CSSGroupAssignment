@@ -51,6 +51,7 @@ export default function Places(){
         minHeight: "100vh",
         background: "linear-gradient( to bottom, #020617, #020617)",
         paddingBottom: "4rem",
+        width:"100%",
       }}
     >
       {/* Top bar */}
