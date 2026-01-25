@@ -90,7 +90,7 @@ export default function Equipment(){
                  }}
   />
         {openIndex === index && (
-         <div style={{ width: "100%", textAlign: "left", marginTop: "0.5rem" }}>
+         <div style={{ width: "100%", textAlign: "left", marginTop: "0.5rem",color:"white" }}>
             <p style={{ borderBottom: "1px solid #444", paddingBottom: "6px" }}><strong>Uses: </strong>{equipment.uses}</p>
             <p style={{ borderBottom: "1px solid #444", paddingBottom: "6px" }}><strong>How it works: </strong>{equipment.process}</p>
             <p><strong>Fun fact: </strong>{equipment.fact}</p>
