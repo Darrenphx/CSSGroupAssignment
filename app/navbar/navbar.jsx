@@ -12,6 +12,7 @@ export default function Navbar(){
     <Link className={styles.navitem} href="/haunted_places"> Haunted Places </Link>
     <Link className={styles.navitem} href="/ghost_equipment"> Ghost Equipment </Link>
     <Link className={styles.navitem} href="/game"> Games </Link>
+    <Link className={styles.navitem} href="/quiz"> Types of Ghosts </Link>
     <div className={styles.dropdown}
     onMouseEnter={()=> setdropdownvisible(true)}
     onMouseLeave={()=> setdropdownvisible(false)} >
@@ -22,7 +23,7 @@ export default function Navbar(){
         
         {dropdownvisible && (
             <div className={styles.dropdownmenu}>
-                <Link className={styles.dropdownitem} href="Page1"> Page 1 </Link>
+                <Link className={styles.dropdownitem} href="/quiz"> Types of Ghosts </Link>
                 <Link className={styles.dropdownitem} href="Page2"> Page 2 </Link>
                 <Link className={styles.dropdownitem} href="Page3"> Page 3 </Link>
                 <Link className={styles.dropdownitem} href="Page4"> Page 4 </Link>

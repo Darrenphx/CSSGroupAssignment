@@ -1,0 +1,11 @@
+.questionformat {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: darkgrey;
+    height: 150px;
+    text-align: center;
+}
+
+.options {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
