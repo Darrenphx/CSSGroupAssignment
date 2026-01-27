@@ -1,0 +1,120 @@
+.spiritBoxPage {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0f0d1e, #1a142e);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.backWrapper {
+  align-self: flex-start;
+}
+
+.backLink {
+  color: #ccc;
+  text-decoration: underline;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: color 0.3s;
+}
+
+.backLink:hover {
+  color: #fff;
+}
+
+.pageTitle {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.boxContainer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #1b1832;
+  border: 3px solid #555;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxLight {
+  position: absolute;
+  border-radius: 5px;
+  transition: background-color 0.1s;
+}
+
+.boxLight.top,
+.boxLight.bottom {
+  width: 60px;
+  height: 10px;
+}
+
+.boxLight.left,
+.boxLight.right {
+  width: 10px;
+  height: 60px;
+}
+
+.boxLight.top {
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.boxLight.bottom {
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.boxLight.left {
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.boxLight.right {
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.boxLabel {
+  color: #fff;
+  font-weight: bold;
+}
+
+.message {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  min-height: 2rem;
+}
+
+.hint {
+  margin-top: 1rem;
+  opacity: 0.7;
+}
+
+.sectionTitle {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-family: "Playfair Display", serif;
+}
+
+.sectionText {
+  margin-top: 1rem;
+  line-height: 2;
+  max-width: 1000px;
+  font-size: 1.15rem;
+  color: #eee;
+  padding: 0 1rem;
+  text-align: justify;
+}

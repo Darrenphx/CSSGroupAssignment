@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import "./rempod.css";
 
 export default function REMPodPage() {
   const totalLights = 12; // total lights around the circle
@@ -56,49 +57,19 @@ export default function REMPodPage() {
   }, []);
 
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        background: "linear-gradient(to bottom, #0f0d1e, #1a142e)",
-        paddingTop: "3rem",
-        color: "white",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        textAlign: "center",
-      }}
-
-    >
-      <div style={{ alignSelf: "flex-start" }}>
+    <div className="rempodPage">
+      <div className="backWrapper">
         <Link
           href="/ghost_equipment"
-          style={{
-            color: "#ccc",
-            textDecoration: "underline",
-            fontSize: "1rem",
-            marginBottom: "1rem",
-            transition: "color 0.3s",
-          }}
-        >
+          className="backLink">
           ← Back to all ghost equipment
         </Link>
       </div>
-      <h1 style={{ textAlign: "center", fontSize: "3rem", margin: 0 }}>REM Pod</h1>
+      <h1 className="pageTitle">REM Pod</h1>
 
       <div
         ref={podRef}
-        style={{
-          margin: "3rem auto",
-          width: "300px",
-          height: "300px",
-          borderRadius: "50%",
-          borderColor:"black",
-          background: "#972323",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          position: "relative",
-        }}
+        className="podContainer"
       >
         {intensities.map((intensity, i) => {
           const angle = (i / totalLights) * 2 * Math.PI - Math.PI / 2;
@@ -110,42 +81,26 @@ export default function REMPodPage() {
           return (
             <div
               key={i}
+              className="podLight"
               style={{
-                position: "absolute",
                 left: "50%",
                 top: "50%",
                 transform: `translate(${x}px, ${y}px)`,
-                width: "20px",
-                height: "20px",
-                borderRadius: "50%",
-                backgroundColor: `rgba(${parseInt(color.slice(1, 3), 16)},${parseInt(
-                  color.slice(3, 5),
-                  16
-                )},${parseInt(color.slice(5, 7), 16)},${intensity})`,
-                transition: "background-color 0.1s",
+                backgroundColor: color,
+                opacity: intensity,
               }}
             />
           );
         })}
       </div>
 
-      <p style={{ textAlign: "center", opacity: 0.8, marginTop: "2rem" }}>
+      <p className="hint">
         Move your cursor anywhere on the page — the REM Pod lights up in the direction of the “spirit”!
       </p>
-      <h2 style={{ marginTop: "2.5rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
+      <h2 className="sectionTitle">
         Introduction
       </h2>
-      <p
-        style={{
-          marginTop: "1rem",
-          lineHeight: "2",
-          maxWidth: "1000px",
-          fontSize: "1.15rem",
-          color: "#eee",
-          padding: "0 1rem",
-          textAlign: "justify",
-        }}
-      >
+      <p className="sectionText">
         A REM-Pod (Radiating Electromagnetic Pod) is a paranormal investigation device designed to detect changes in 
         electromagnetic fields. Unlike an EMF meter, which must be moved around an area, a REM-Pod is placed in one spot 
         and left to monitor its surroundings. When its field is disturbed, the device responds with lights and sound. 
@@ -155,20 +110,10 @@ export default function REMPodPage() {
       </p>
 
       {/* Sightings Section */}
-      <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
+      <h2 className="sectionTitle">
         How It Works
       </h2>
-      <p
-        style={{
-          marginTop: "1rem",
-          lineHeight: "2",
-          maxWidth: "1000px",
-          fontSize: "1.15rem",
-          color: "#eee",
-          padding: "0 1rem",
-          textAlign: "justify",
-        }}
-      >
+      <p className="sectionText">
         The REM-Pod generates a small, invisible electromagnetic field around its antenna. When something enters or 
         disturbs this field, the device is triggered. This causes the REM-Pod to light up, beep, or alarm, alerting 
         investigators to possible movement or interaction. During investigations, the REM-Pod is often placed in quiet
@@ -177,40 +122,20 @@ export default function REMPodPage() {
       </p>
 
       {/* Additional Notes (optional) */}
-      <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
+      <h2 className="sectionTitle">
         Why Ghost Hunters Use It?
       </h2>
-      <p
-        style={{
-          marginTop: "1rem",
-          lineHeight: "2",
-          maxWidth: "1000px",
-          fontSize: "1.15rem",
-          color: "#eee",
-          padding: "0 1rem",
-          textAlign: "justify",
-        }}
-      >
+      <p className="sectionText">
         REM-Pods are popular because they provide clear and noticeable reactions. The lights and sounds make it easy to
          see when the device has been triggered, even from a distance. This makes them useful during dark investigations
           where visibility is limited. Many ghost hunters believe REM-Pods allow spirits to communicate more easily by 
           interacting with the device’s field. When activations occur repeatedly in response to questions or in controlled 
           environments, investigators may consider it potential paranormal evidence.
       </p>
-      <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
+      <h2 className="sectionTitle">
         Limitations and Skepticism
       </h2>
-      <p
-        style={{
-          marginTop: "1rem",
-          lineHeight: "2",
-          maxWidth: "1000px",
-          fontSize: "1.15rem",
-          color: "#eee",
-          padding: "0 1rem",
-          textAlign: "justify",
-        }}
-      >
+      <p className="sectionText">
         Like EMF meters, REM-Pods can be affected by natural and environmental factors. 
         Nearby electronic devices, radio signals, or accidental movement can trigger the device. 
         Because of this, false activations are possible. Skeptics argue that REM-Pods detect physical 
