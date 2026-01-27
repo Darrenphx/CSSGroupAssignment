@@ -23,6 +23,8 @@ export default function Navbar(){
         
         {dropdownvisible && (
             <div className={styles.dropdownmenu}>
+                <Link className={styles.dropdownitem} href="/forum">Ghost Evidence Forum</Link>
+                <Link className={styles.dropdownitem} href="/singapore-beliefs">Singapore Beliefs</Link>
                 <Link className={styles.dropdownitem} href="/quiz"> Types of Ghosts </Link>
                 <Link className={styles.dropdownitem} href="Page2"> Page 2 </Link>
                 <Link className={styles.dropdownitem} href="Page3"> Page 3 </Link>
