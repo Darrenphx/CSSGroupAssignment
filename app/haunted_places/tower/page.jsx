@@ -38,7 +38,7 @@ export default function Tower() {
       </h1>
 
       <img
-        src="https://www.hauntedrooms.co.uk/wp-content/uploads/2021/02/Tower-of-London-1600x1016.jpeg"
+        src="/photos/tower.webp"
         alt="Tower of London"
         style={{
           width: "100%",

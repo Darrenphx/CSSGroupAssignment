@@ -38,7 +38,7 @@ export default function Penitentiary() {
       </h1>
 
       <img
-        src="https://www.visitphilly.com/wp-content/uploads/2017/12/crtsy-eastern-state-penitentiary-BT02-2200VP.jpg"
+        src="/photos/eastern.jpg"
         alt="Eastern State Penitentiary"
         style={{
           width: "100%",

@@ -47,7 +47,7 @@ export default function Corvin() {
 
       {/* Image */}
       <img
-        src="https://thelittlehouseofhorrors.com/app/uploads/Corvin-Radu-Dimitrescu-Elian-via-Getty-Images-640x427.png"
+        src="/photos/corvin.png"
         alt="Corvin Castle"
         style={{
           width: "100%",

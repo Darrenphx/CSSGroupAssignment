@@ -38,7 +38,7 @@ export default function Hill() {
       </h1>
 
       <img
-        src="https://cdn1.matadornetwork.com/blogs/1/2018/10/Hill-of-Crosses-in-Lithuania-under-fiery-red-skies-1200x850.jpg"
+        src="/photos/hill.jpg"
         alt="Hill of Crosses"
         style={{
           width: "100%",

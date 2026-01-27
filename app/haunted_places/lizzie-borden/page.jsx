@@ -42,7 +42,7 @@ export default function Lizzie() {
       </h1>
 
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHS8e21y-lfVhOJzUdp6J_k_-dn-_l5BD8gA&s"
+        src="/photos/lizzie.jpeg"
         alt="Lizzie Borden House"
         style={{
           width: "100%",
