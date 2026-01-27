@@ -1,0 +1,70 @@
+.Page {
+  min-height: 100vh;
+  padding: 3rem;
+  background: linear-gradient(to bottom, #0f0d1e, #1a142e);
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.backWrapper {
+  align-self: flex-start;
+}
+
+.backLink {
+  color: #ccc;
+  text-decoration: underline;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.backLink:hover {
+  color: #fff;
+}
+
+.title {
+  margin-top: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+}
+
+.Image {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.Image:hover {
+  transform: scale(1.02);
+}
+
+.description {
+  margin-top: 2rem;
+  line-height: 1.8;
+  max-width: 1100px;
+  font-size: 1.15rem;
+  color: #eee;
+}
+
+.sectionTitle {
+  margin-top: 2.5rem;
+  font-size: 1.8rem;
+  font-family: "Playfair Display", serif;
+}
+
+.sectionText {
+  margin-top: 1rem;
+  line-height: 2;
+  max-width: 900px;
+  font-size: 1.15rem;
+  color: #eee;
+  padding: 0 1rem;
+  text-align: justify;
+}
