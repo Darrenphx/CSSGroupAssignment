@@ -1,12 +1,20 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Snowfall from "react-snowfall";
 
-const snowflake1 = document.createElement("img")
-snowflake1.src = "/photos/ghost-8250317_640.png"
+// const snowflake1 = document.createElement("img")
+// snowflake1.src = "/photos/ghost-8250317_640.png"
 
-const images = [snowflake1]
+// const images = [snowflake1]
 export default function SnowfallClient() {
+  const [images, setImages] = useState([]);
+
+  useEffect(() => {
+    const snowflake1 = document.createElement("img");
+    snowflake1.src = "/photos/ghost-8250317_640.png";
+
+    setImages([snowflake1]);
+  }, []);
   return (
     <Snowfall
       style={{
