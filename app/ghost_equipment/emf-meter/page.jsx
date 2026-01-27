@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import "./emf.css";
 
 export default function EMFMeterPage() {
   const [intensities, setIntensities] = useState([0, 0, 0, 0, 0]);
@@ -51,87 +52,43 @@ export default function EMFMeterPage() {
   
 
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        background: "linear-gradient(to bottom, #0f0d1e, #1a142e)",
-        paddingTop: "3rem",
-        color: "white",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        textAlign: "center",
-      }}
+    <div className="emfPage">
 
-    >
-
-      <div style={{ alignSelf: "flex-start" }}>
+      <div className="backWrapper">
         <Link
           href="/ghost_equipment"
-          style={{
-            color: "#ccc",
-            textDecoration: "underline",
-            fontSize: "1rem",
-            marginBottom: "1rem",
-            transition: "color 0.3s",
-          }}
-        >
+          className="backLink">
           ← Back to all ghost equipment
         </Link>
       </div>
-      <h1 style={{ textAlign: "center", fontSize: "3rem", margin: 0 }}>
+      <h1 className="pageTitle">
         EMF Meter
       </h1>
 
       <div
         ref={meterRef}
-        style={{
-          margin: "3rem auto",
-          width: "400px",
-          height: "120px",
-          border: "2px solid #555",
-          borderRadius: "12px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-around",
-          background: "#1b1832",
-        }}
+        className="meter"
       >
         {intensities.map((intensity, i) => (
           <div
             key={i}
+            className="meterBar"
             style={{
-              width: "50px",
-              height: "60px",
-              borderRadius: "6px",
-              backgroundColor: `rgba(${parseInt(colors[i].slice(1, 3), 16)},${parseInt(
-                colors[i].slice(3, 5),
-                16
-              )},${parseInt(colors[i].slice(5, 7), 16)},${intensity})`,
-              transition: "background-color 0.1s",
+              backgroundColor: colors[i],
+              opacity: intensity,
             }}
           />
         ))}
       </div>
 
-      <p style={{ textAlign: "center", opacity: 0.8 }}>
+      <p className="hint">
         Move your cursor anywhere on the page — the EMF meter reacts like a real device!
       </p>
       {/* Origins Section */}
-      <h2 style={{ marginTop: "2.5rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
+      <h2 className="sectionTitle">
         Introduction
       </h2>
-      <p
-        style={{
-          marginTop: "1rem",
-          lineHeight: "2",
-          maxWidth: "1000px",
-          fontSize: "1.15rem",
-          color: "#eee",
-          padding: "0 1rem",
-          textAlign: "justify",
-        }}
-      >
+      <p className="sectionText">
         An EMF meter, short for Electromagnetic Field meter, is one of 
         the most commonly used tools in ghost hunting. Originally 
         designed for electricians and engineers, it measures invisible 
@@ -141,20 +98,10 @@ export default function EMFMeterPage() {
       </p>
 
       {/* Sightings Section */}
-      <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
+      <h2 className="sectionTitle">
         How It Works
       </h2>
-      <p
-        style={{
-          marginTop: "1rem",
-          lineHeight: "2",
-          maxWidth: "1000px",
-          fontSize: "1.15rem",
-          color: "#eee",
-          padding: "0 1rem",
-          textAlign: "justify",
-        }}
-      >
+      <p className="sectionText">
         An EMF meter works by detecting electromagnetic fields in its surrounding environment. These fields are naturally
          produced by everyday electrical sources such as power lines, wiring inside walls, phones, and electronic devices. 
          When the meter is turned on, it continuously scans the area and displays readings using lights, numbers, or sounds.
@@ -165,40 +112,20 @@ export default function EMFMeterPage() {
       </p>
 
       {/* Additional Notes (optional) */}
-      <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
+      <h2 className="sectionTitle">
         Why Ghost Hunters Use It?
       </h2>
-      <p
-        style={{
-          marginTop: "1rem",
-          lineHeight: "2",
-          maxWidth: "1000px",
-          fontSize: "1.15rem",
-          color: "#eee",
-          padding: "0 1rem",
-          textAlign: "justify",
-        }}
-      >
+      <p className="sectionText">
         EMF meters are popular in paranormal investigations because they provide immediate and visible feedback. Many 
         investigators believe that spirits use electromagnetic energy to manifest or communicate, causing spikes in EMF
         readings when they are nearby. When EMF activity increases unexpectedly, investigators may treat it as a possible
          sign of paranormal presence, especially if it occurs alongside strange sounds, temperature drops, or personal
          experiences.
       </p>
-      <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
+      <h2 className="sectionTitle">
         Limitations and Skepticism
       </h2>
-      <p
-        style={{
-          marginTop: "1rem",
-          lineHeight: "2",
-          maxWidth: "1000px",
-          fontSize: "1.15rem",
-          color: "#eee",
-          padding: "0 1rem",
-          textAlign: "justify",
-        }}
-      >
+      <p className="sectionText">
         Despite their popularity, EMF meters are not considered scientific proof of ghosts. Many natural
          sources—such as hidden wiring, electrical appliances, or mobile phones—can cause EMF spikes. Because 
         of this, readings must be interpreted carefully. Skeptics argue that EMF meters detect environmental 

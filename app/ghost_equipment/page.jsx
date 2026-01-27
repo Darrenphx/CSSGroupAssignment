@@ -17,6 +17,7 @@ export default function Equipment(){
     {
       name: "REM Pod",
       image:"/photos/rempod.jpg",
+      //https://www.ebay.com.sg/itm/193786606679
       uses: "Communication and presence detection",
       process: "Creates small magnectic field",
       fact:"Can be easily spoofed with walkie-talkies and other remote devices",
