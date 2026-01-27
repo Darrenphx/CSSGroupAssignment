@@ -82,8 +82,8 @@ export default function Equipment(){
              src={equipment.image}
              alt={equipment.name}
              style={{
-                      width: "140px",
-                      height: "100px",
+                      width: "280px",
+                      height: "200px",
                       objectFit: "cover",
                       borderRadius: "6px",
                       marginBottom:"2rem"
