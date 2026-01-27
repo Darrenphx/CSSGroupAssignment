@@ -6,7 +6,8 @@ export default function Places(){
     {
       name: "Salem, Massachusetts",
       id:"salem",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjAdbAcEvtMPK86GQ48A4Rq0FXwtGSWIbSgQ&s",
+      image: "Salem.webp",
+      //https://salemghosts.com/the-most-haunted-places-in-salem/
       description: "Salem, most known for the 1692 Witch Trials, has learned to make a living off its own dark history. Each October, more than a million visitors crowd the narrow streets for psychic fairs, walking tours, and candlelit reenactments. The Witch House and the Salem Witch Trials Memorial stay packed, but what’s really impressive is how a town built on hysteria has turned itself into a full-fledged tourism brand.",
     },
     {
