@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import "./creepyMusic.css";
 
 export default function CreepyMusic() {
   const audioRef = useRef(null);
@@ -31,18 +32,7 @@ export default function CreepyMusic() {
 
       <button
         onClick={toggleMusic}
-        style={{
-          position: "fixed",
-          bottom: "20px",
-          right: "20px",
-          background: "#1b1832",
-          color: "white",
-          border: "1px solid #444",
-          borderRadius: "20px",
-          padding: "0.5rem 1rem",
-          cursor: "pointer",
-          zIndex: 9999,
-        }}
+        className="creepyMusicBtn"
       >
         {playing ? "🔊 Music On": "🔇 Music Off" }
       </button>
