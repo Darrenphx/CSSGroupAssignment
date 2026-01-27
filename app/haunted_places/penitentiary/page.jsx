@@ -52,6 +52,28 @@ export default function Penitentiary() {
       <h2 className="sectionTitle">
         Sightings
       </h2>
+      <div className="imageRow">
+      <img
+        src="/photos/stairs.jpeg"
+        alt="old crumbling indoor of prison with stairs"
+        className="visual"
+        //https://adventure.com/eastern-state-penitentiary/
+      />
+
+      <img
+        src="/photos/shadow.webp"
+        alt="shadow figure in doorway"
+        className="visual"
+        //https://imgur.com/a/yWSBCJ2
+      />
+
+      <img
+        src="/photos/whitelady.jpg"
+        alt="a ghost name white lady in front of penitentiary"
+        className="visual"
+        //https://www.sheptonmalletprison.com/paranormal-news/ghost-stories-from-behind-bars-the-white-lady/
+      />
+      </div>
       <p className="sectionText">
         Cellblock 12 is known for echoing voices and cackling; Cellblock 6 for shadowy figures
          darting along the walls; Cellblock 4 for visions of ghostly faces. Many people have 

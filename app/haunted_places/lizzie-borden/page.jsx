@@ -51,6 +51,28 @@ export default function Lizzie() {
       <h2 className="sectionTitle">
         Sightings
       </h2>
+      <div className="imageRow">
+      <img
+        src="/photos/mirror.jpeg"
+        alt="A blurry photo of mirror reflecting what seems to be apparation"
+        className="visual"
+        //https://www.facebook.com/UEPerimeters/photos/a.382279002336409/389196508311325/?id=359014327996210
+      />
+
+      <img
+        src="/photos/old.webp"
+        alt="old looking room of lizzie borden's house"
+        className="visual"
+        //https://lizzie-borden.com/
+      />
+
+      <img
+        src="/photos/murder.webp"
+        alt="Reeanactment of murder"
+        className="visual"
+        //https://www.darkwhimsicalart.com/blogs/news/a-night-in-the-infamous-lizzie-borden-house-ghost-investigation-and-haunting-history?srsltid=AfmBOoppqZeT2F06AeG9BXpUVKqAlSb3UrpYUCnXhDs8FM3JvTBqHHV9
+      />
+      </div>
       <p className="sectionText" >
         The house is also known to be extremely haunted—with spirits of both the victims as 
         well as some kids from next door who were reportedly drowned by their mother in a well.

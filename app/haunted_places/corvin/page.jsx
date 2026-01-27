@@ -54,12 +54,35 @@ export default function Corvin() {
       <h2 className="sectionTitle">
         Sightings
       </h2>
+      <div className="imageRow">
+      <img
+        src="/photos/corvinjail.jpg"
+        alt="Corvin Castle"
+        className="visual"
+        //https://amyscrypt.com/corvin-castle-legends-romania/
+      />
+
+      <img
+        src="/photos/footsteps.jpg"
+        alt="Corvin Castle"
+        className="visual"
+        //https://becomingthemuse.net/2015/11/03/of-footsteps-in-the-dark/
+      />
+
+      <img
+        src="/photos/apparitions.avif"
+        alt="Corvin Castle"
+        className="visual"
+        //https://www.freepik.com/premium-ai-image/haunted-house-scene-with-ghostly-apparition-appearing-top-grand-staircase-shrouded-mist_354961458.htm
+      />
+      </div>
       <p className="sectionText">
         There have been other reports of people seeing apparitions, shadow figures and orbs. Many EVP’s
          (Electronic Voice Phenomena) have been recorded as well. And there is some violent poltergeist 
          activity going on. People also get overwhelmed by the feeling of dread, screams and footsteps 
          are heard and people have been touched by unseen hands.  
       </p>
+      
 
       {/* Additional Notes (optional) */}
       <h2 className="sectionTitle">

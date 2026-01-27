@@ -62,11 +62,34 @@ export default function Hill() {
       <h2 className="sectionTitle">
         Sightings
       </h2>
+      <div className="imageRow">
+      <img
+        src="/photos/crosses.webp"
+        alt="Man standing in full of crosses and looking at eerie statue"
+        className="visual"
+        //https://allthatsinteresting.com/hill-of-crosses
+      />
+
+      <img
+        src="/photos/monk.webp"
+        alt="a tall 6ft monk holding crucifix shadow looming behind person"
+        className="visual"
+        //https://www.thesun.co.uk/news/7116742/ghost-hunter-paranormal-activity-roche-abbey-yorkshire/
+      />
+
+      <img
+        src="/photos/graveyard.jpeg"
+        alt="sunset with many eerie crosses"
+        className="visual"
+        //https://deepbaltic.com/2016/05/21/the-hill-of-crosses-a-monument-to-the-defiant-spirit-of-lithuania/
+      />
+      </div>
       <p className="sectionText" >
         Locals say that you can glimpse a ghost procession of monks at the foot of the 
         hill at sunrise. Throughout the ages, magical appearances, visions of saints 
         and sightings of ghosts have been a part of the hill’s history
       </p>
+
 
       {/* Additional Notes (optional) */}
       <h2 className="sectionTitle">

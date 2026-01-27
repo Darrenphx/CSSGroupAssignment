@@ -41,6 +41,28 @@ export default function Salem() {
       <h2 className="sectionTitle">
         Sightings
       </h2>
+      <div className="imageRow">
+      <img
+        src="/photos/window.jpeg"
+        alt="shadow figure seen in window"
+        className="visual"
+        //https://949whom.com/witch-house-cowin-salem-haunted/
+      />
+
+      <img
+        src="/photos/witch.jpg"
+        alt="scary looking woman"
+        className="visual"
+        //https://redskiesmagazinessu.wordpress.com/2015/01/18/salem-ghost-tour/
+      />
+
+      <img
+        src="/photos/grave.jpg"
+        alt="creepy grave next to creepy house"
+        className="visual"
+        //https://oddencounters.com/ghosts/Real-Ghost-Photos_Salem-Cemetery.html
+      />
+      </div>
       <p className="sectionText">
         Visitors and locals report strange occurrences around the town’s historic sites,
         including ghostly footsteps, shadowy figures, and unexplained cold drafts.

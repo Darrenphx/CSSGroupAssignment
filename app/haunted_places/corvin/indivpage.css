@@ -41,9 +41,31 @@
   transition: transform 0.3s ease;
 }
 
+.visual{
+  width: 280px;
+  height: 200px;
+  margin-top: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+}
+
+.visual:hover {
+  transform: scale(1.02);
+}
+
+.imageRow{
+  display: flex;
+  gap: 1.5rem;        /* space between images */
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
 .Image:hover {
   transform: scale(1.02);
 }
+
 
 .description {
   margin-top: 2rem;

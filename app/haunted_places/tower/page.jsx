@@ -48,6 +48,28 @@ export default function Tower() {
       <h2  className="sectionTitle">
         Sightings
       </h2>
+      <div className="imageRow">
+      <img
+        src="/photos/woman.jpeg"
+        alt="translucent woman seen at the side of old creepy building"
+        className="visual"
+        //https://www.facebook.com/londonistcom/posts/weve-ranked-all-21-ghosts-at-the-tower-of-london-in-order-of-least-to-most-prepo/1280780150754306/
+      />
+
+      <img
+        src="/photos/clocktower.avif"
+        alt="creepy clock tower"
+        className="visual"
+        //https://londonpass.com/en/things-to-do/10-most-haunted-places-in-london
+      />
+
+      <img
+        src="/photos/ghostgirl.jpeg"
+        alt="ghost girl behind a human girl in reflection"
+        className="visual"
+        //https://mysticaltimesblog.com/the-white-tower-ghost/
+      />
+      </div>
       <p className="sectionText">
         There is a well known ghost called "White Woman" of the Tower of London. Often, visitors only glimpse a figure
          in white in the corner of their eyes. Then, quite suddenly, they smell the terrible, pungent smell of an old, 

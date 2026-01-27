@@ -32,6 +32,19 @@
   font-family: "Playfair Display", serif;
 }
 
+.visual{
+  width: 280px;
+  height: 200px;
+  margin-top: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+}
+
+.visual:hover {
+  transform: scale(1.02);
+}
+
 .Image {
   width: 100%;
   max-width: 700px;
