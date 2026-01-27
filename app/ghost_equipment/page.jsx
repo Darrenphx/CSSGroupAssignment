@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import "./equipment.css";
 
 export default function Equipment(){
     const [openIndex, setOpenIndex] = useState(null);
@@ -33,78 +34,32 @@ export default function Equipment(){
   ];
 
    return (
-    <div
-      style={{
-        minHeight: "100vh",
-        background: "linear-gradient( to bottom, #020617, #020617)",
-        paddingBottom: "4rem",
-      }}
-    >
+    <div className="equipmentPage">
       {/* Top bar */}
-      <div
-        style={{
-          height: "60px",
-          background: "linear-gradient(to right, #04214a, #888)",
-        }}
-      />
-      <h1 style={{
-        textAlign: "center",
-        margin: "5rem ",
-        color: "#ffffff",
-        marginBottom:"3rem",
-        fontSize: 30,
-      }}
+      <div className="topBar"/>
+      <h1  className="pageTitle"
       >Ghost Equipment</h1>
-      <ul style={{ 
-        listStyle: "none",
-        padding: 0,
-        display: "grid",
-        gridTemplateColumns: "repeat(3, 1fr)",
-        gap: "2rem",
-        maxWidth: "900px",   // controls how wide the whole grid is
-        margin: "0 auto",  }}>
+      <ul className="equipmentGrid">
         {ghostequipment.map((equipment, index) => (
           <li onClick={() =>
     setOpenIndex(openIndex === index ? null : index)}
             key={index}
-            style={{
-                backgroundColor: "#1b1832",
-                padding: "1rem",
-                borderRadius: "8px",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                textAlign: "center",
-                cursor: "pointer",
-                 }}
-          >
+            className="equipmentCard" >
               
-            <h2 style={{ color: "#ffffff",fontSize:"2rem" }}><strong>{equipment.name}</strong></h2>
+            <h2 className="equipmentName"><strong>{equipment.name}</strong></h2>
             <img
              src={equipment.image}
              alt={equipment.name}
-             style={{
-                      width: "140px",
-                      height: "130px",
-                      objectFit: "cover",
-                      borderRadius: "4px",
-                      marginBottom:"2rem",
-                      borderBlock: "3px solid black",
-                 }}
-  />
+             className="equipmentImage"/>
         {openIndex === index && (
-         <div style={{ width: "100%", textAlign: "left", marginTop: "0.5rem",color:"white" }}>
-            <p style={{ borderBottom: "1px solid #444", paddingBottom: "6px" }}><strong>Uses: </strong>{equipment.uses}</p>
-            <p style={{ borderBottom: "1px solid #444", paddingBottom: "6px" }}><strong>How it works: </strong>{equipment.process}</p>
+         <div className="equipmentDetails">
+            <p ><strong>Uses: </strong>{equipment.uses}</p>
+            <p><strong>How it works: </strong>{equipment.process}</p>
             <p><strong>Fun fact: </strong>{equipment.fact}</p>
             <Link
                 href={`/ghost_equipment/${equipment.name.toLowerCase().replace(/\s+/g, "-")}`}
                 onClick={(e) => e.stopPropagation()}
-                style={{
-                        color: "#7aa2ff",
-                        fontSize: "0.9rem",
-                        textDecoration: "underline",
-                      }}
+                className="exploreLink"
             >
              Explore more →
             </Link>
