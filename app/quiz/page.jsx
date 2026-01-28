@@ -51,9 +51,9 @@ function Quiz() {
 
     if (finished) {
         return (
-            <div>
+            <div className={styles.finished}>
                 <h2>You have reached the end of the quiz...</h2>
-                <p>Your final score is {score} / {questions.length}</p>
+                <p>Your final score is <span className={styles.scoreHighlight}>{score} / {questions.length}</span></p>
             </div>
         );
     };
@@ -70,7 +70,6 @@ function Quiz() {
                   key={index}
                   onClick={() => handleAnswer(option.correct)}
                   disabled={answered}
-                  style={{display: "block", margin: "8px 0"}}
                 >
                     {option.text}
                 </button>
@@ -78,11 +77,11 @@ function Quiz() {
 
             {answered && (
                 <>
-                  <p>
+                  <p className={`${styles.feedback} ${isCorrect ? styles.feedbackCorrect : styles.feedbackWrong}`}>
                     {isCorrect ? "Correct" : "Wrong"}
                   </p>
 
-                  <button onClick={nextQuestion}>
+                  <button onClick={nextQuestion} className={styles.nextButton}>
                     {currentIndex + 1 === questions.length ? "Check your final score" : "Next Question..."}
                   </button>
                 </>
