@@ -187,10 +187,9 @@
   margin: 0 auto;
   padding: 4rem 2rem;
 
-  align-items: center; /* keep this */
+  align-items: center; 
 }
-
-
+  
 .sectionImage {
   justify-self: center;
   align-self: center;
@@ -271,7 +270,7 @@
   gap: 3rem;
 }
 
-/* Heading */
+
 .heading {
   grid-column: span 2;
   text-align: center;
@@ -280,7 +279,7 @@
   letter-spacing: 0.04em;
 }
 
-/* Cards */
+
 .forum,
 .quiz {
   background: rgba(27, 24, 50, 0.95);
@@ -318,7 +317,6 @@
 }
 
 
-/* Links → buttons */
 .forumlink,
 .quizlink {
   display: inline-block;

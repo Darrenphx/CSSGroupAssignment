@@ -161,13 +161,13 @@
         />
 
         <div>
-          <h2 className={styles.heading}>Ghosts</h2>
+          <h2 className={styles.heading}> Supernatural Beings </h2>
           <p> 
-            Not all ghosts are believed to behave the same way.
-            This section introduces different types of spirits commonly described in paranormal studies, such as residual hauntings, intelligent spirits, and poltergeists. 
-            Each type is associated with distinct behaviours, patterns, and reported encounters, helping to explain why hauntings are experienced differently across locations.
+            Not all supernatural beings behave the same way. Some are believed to linger in one place, while others interact with their surroundings or people.
+            Sightings and encounters are often described differently depending on the entity and the location.
+            Discover the different types of supernatural beings that have been reported.
           </p>
-          <Link href="/ghost" className={styles.link}>Learn about Ghosts →</Link>
+          <Link href="/ghost" className={styles.link}>Discover Supernatural Beings →</Link>
 
         </div>
       </section>
