@@ -1,0 +1,83 @@
+.equipmentPage {
+  min-height: 100vh;
+  padding-bottom: 4rem;
+  background: linear-gradient(to bottom, #020617, #020617);
+}
+
+.topBar {
+  height: 60px;
+  background: linear-gradient(to right, #04214a, #888);
+}
+
+.pageTitle {
+  text-align: center;
+  margin: 5rem;
+  margin-bottom: 4rem;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.equipmentGrid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.equipmentCard {
+  background-color: #1b1832;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.equipmentCard:hover {
+  transform: translateY(-3px);
+}
+
+.equipmentName {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.equipmentImage {
+  width: 140px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  border: 3px solid black;
+}
+
+.equipmentDetails {
+  width: 100%;
+  margin-top: 0.5rem;
+  text-align: left;
+  color: white;
+}
+
+.equipmentDetails p {
+  border-bottom: 1px solid #444;
+  padding-bottom: 6px;
+}
+
+.equipmentDetails p:last-of-type {
+  border-bottom: none;
+}
+
+.exploreLink {
+  display: inline-block;
+  margin-top: 0.8rem;
+  color: #7aa2ff;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
