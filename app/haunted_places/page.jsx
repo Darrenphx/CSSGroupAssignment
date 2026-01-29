@@ -86,7 +86,7 @@ export default function Places(){
               padding: "1rem",
               borderRadius: "8px",
               display: "flex",
-              flexDirection: "column",
+              flexDirection: "column",  
               alignItems: "center",   // centers everything horizontally
               textAlign: "center",
               //boxShadow: "0 0 10px rgba(0,0,0,0.5)",
