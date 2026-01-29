@@ -49,7 +49,7 @@
         <a href="#objects"> Objects and Equipment </a>
         <a href="#places"> Places </a>
         <a href="#games"> Games </a>
-        <a href="#ghosts"> Ghosts </a>
+        <a href="#ghosts"> Supernatural Beings </a>
         <a href="#beliefs"> Paranormal's Beliefs </a>
         <a href="#forum/quiz"> Forum/Quiz </a>
 
