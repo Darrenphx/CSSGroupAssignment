@@ -1,13 +1,14 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import "./spiritbox.css";
 
 export default function SpiritBoxPage() {
   const boxRef = useRef(null);
   const [lights, setLights] = useState({ top: 0, right: 0, bottom: 0, left: 0 });
   const [message, setMessage] = useState("");
 
-  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const letters = "AAABCDEEEFGHIIJKLMNOOPQRSTUUVWXYZ";
 
   useEffect(() => {
     function handleMove(e) {
@@ -60,138 +61,54 @@ export default function SpiritBoxPage() {
   }, []);
 
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        background: "linear-gradient(to bottom, #0f0d1e, #1a142e)",
-        color: "white",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        padding: "2rem",
-      }}
-    >
-      <div style={{ alignSelf: "flex-start" }}>
+    <div className="spiritBoxPage">
+      <div className="backWrapper">
         <Link
           href="/ghost_equipment"
-          style={{
-            color: "#ccc",
-            textDecoration: "underline",
-            fontSize: "1rem",
-            marginBottom: "1rem",
-            transition: "color 0.3s",
-          }}
+          className="backLink"
         >
           ← Back to all ghost equipment
         </Link>
       </div>
-      <h1 style={{ textAlign: "center", fontSize: "3rem", marginBottom: "2rem" }}>Spirit Box</h1>
+      <h1 className="pageTitle">Spirit Box</h1>
 
       <div
         ref={boxRef}
-        style={{
-          position: "relative",
-          width: "200px",
-          height: "200px",
-          backgroundColor: "#1b1832",
-          border: "3px solid #555",
-          borderRadius: "12px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
+        className="boxContainer"
+        >
         
         {/* Top light */}
         <div
-          style={{
-            position: "absolute",
-            top: "-20px",
-            left: "50%",
-            transform: "translateX(-50%)",
-            width: "60px",
-            height: "10px",
-            backgroundColor: `rgba(255,0,0,${lights.top})`,
-            borderRadius: "5px",
-            transition: "background-color 0.1s",
-          }}
+          className="boxLight top" style={{ backgroundColor: `rgba(255,0,0,${lights.top})` }}
         />
         {/* Bottom light */}
         <div
-          style={{
-            position: "absolute",
-            bottom: "-20px",
-            left: "50%",
-            transform: "translateX(-50%)",
-            width: "60px",
-            height: "10px",
-            backgroundColor: `rgba(255,0,0,${lights.bottom})`,
-            borderRadius: "5px",
-            transition: "background-color 0.1s",
-          }}
+          className="boxLight bottom" style={{ backgroundColor: `rgba(255,0,0,${lights.bottom})` }}
         />
         {/* Left light */}
         <div
-          style={{
-            position: "absolute",
-            left: "-20px",
-            top: "50%",
-            transform: "translateY(-50%)",
-            width: "10px",
-            height: "60px",
-            backgroundColor: `rgba(255,0,0,${lights.left})`,
-            borderRadius: "5px",
-            transition: "background-color 0.1s",
-          }}
+          className="boxLight left" style={{ backgroundColor: `rgba(255,0,0,${lights.left})` }}
         />
         {/* Right light */}
         <div
-          style={{
-            position: "absolute",
-            right: "-20px",
-            top: "50%",
-            transform: "translateY(-50%)",
-            width: "10px",
-            height: "60px",
-            backgroundColor: `rgba(255,0,0,${lights.right})`,
-            borderRadius: "5px",
-            transition: "background-color 0.1s",
-          }}
+          className="boxLight right" style={{ backgroundColor: `rgba(255,0,0,${lights.right})` }}
         />
 
-        <span style={{ color: "#fff", fontWeight: "bold" }}>SPIRIT BOX</span>
+        <span className="boxLabel">SPIRIT BOX</span>
       </div>
 
-      <p
-        style={{
-          textAlign: "center",
-          marginTop: "2rem",
-          fontSize: "1.5rem",
-          minHeight: "2rem",
-        }}
-      >
+      <p className="message">
         {message}
       </p>
 
-      <p style={{ marginTop: "1rem", opacity: 0.7 }}>
+      <p className="hint">
         Move your cursor around the page to detect “spirit energy.”
       </p>
       {/* Origins Section */}
-      <h2 style={{ marginTop: "2.5rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
+      <h2 className="sectionTitle">
         Introduction
       </h2>
-      <p
-        style={{
-          marginTop: "1rem",
-          lineHeight: "2",
-          maxWidth: "1000px",
-          fontSize: "1.15rem",
-          color: "#eee",
-          padding: "0 1rem",
-          textAlign: "justify",
-        }}
-      >
+      <p className="sectionText">
         A Spirit Box is a paranormal investigation device used to attempt communication with spirits. It 
         rapidly scans through radio frequencies, producing fragments of sound that ghost hunters believe 
         spirits can manipulate to form words or responses. Because of its unpredictable and unsettling 
@@ -202,20 +119,10 @@ export default function SpiritBoxPage() {
       </p>
 
       {/* Sightings Section */}
-      <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
+      <h2 className="sectionTitle">
         How It Works
       </h2>
-      <p
-        style={{
-          marginTop: "1rem",
-          lineHeight: "2",
-          maxWidth: "1000px",
-          fontSize: "1.15rem",
-          color: "#eee",
-          padding: "0 1rem",
-          textAlign: "justify",
-        }}
-      >
+      <p className="sectionText">
         A Spirit Box works by continuously sweeping through AM or FM radio frequencies at a fast rate. 
         This prevents full radio broadcasts from being heard and instead produces brief snippets of static 
         and sound. Ghost hunters believe spirits can influence this audio to communicate by forming words or
@@ -225,40 +132,20 @@ export default function SpiritBoxPage() {
       </p>
 
       {/* Additional Notes (optional) */}
-      <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
+      <h2 className="sectionTitle">
         Why Ghost Hunters Use It?
       </h2>
-      <p
-        style={{
-          marginTop: "1rem",
-          lineHeight: "2",
-          maxWidth: "1000px",
-          fontSize: "1.15rem",
-          color: "#eee",
-          padding: "0 1rem",
-          textAlign: "justify",
-        }}
-      >
+      <p className="sectionText">
         Spirit Boxes are widely used because they allow for real-time interaction. Unlike EVP recorders, which require playback
          to hear results, Spirit Boxes provide immediate feedback during investigations. This makes sessions feel more interactive
          and intense. Many ghost hunters believe that when responses directly answer questions or use relevant names and phrases,
           it suggests intelligent communication. When used alongside other equipment such as EMF meters or REM-Pods, Spirit Box 
           activity is sometimes considered stronger evidence of paranormal presence.
       </p>
-      <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
+      <h2 className="sectionTitle">
         Limitations and Skepticism
       </h2>
-      <p
-        style={{
-          marginTop: "1rem",
-          lineHeight: "2",
-          maxWidth: "1000px",
-          fontSize: "1.15rem",
-          color: "#eee",
-          padding: "0 1rem",
-          textAlign: "justify",
-        }}
-      >
+      <p className="sectionText">
         Spirit Boxes are one of the most debated tools in ghost hunting. Because they rely on radio frequencies,
          random words, music fragments, or voices from broadcasts can be mistaken for paranormal communication. 
          This phenomenon is often explained by pareidolia, where the brain interprets random sounds as meaningful
