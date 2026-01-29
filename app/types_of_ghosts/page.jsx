@@ -60,7 +60,7 @@ export default function Supernatural(){
           color: #ffffff;
           margin: 2rem 1rem;
           margin-bottom: 2rem;
-          font-size: clamp(1.5rem, 4vw, 2rem);
+          font-size: clamp(1.5rem, 4vw, 1.875rem);
         }
         
         .grid {
@@ -75,26 +75,39 @@ export default function Supernatural(){
         
         .card {
           background-color: #1b1832;
+          margin-bottom: 0;
           padding: 1rem;
           border-radius: 8px;
           display: flex;
           flex-direction: column;
           align-items: center;
           text-align: center;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          cursor: pointer;
+        }
+        
+        .card:hover {
+          transform: scale(1.05);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
         }
         
         .cardImage {
           width: 100%;
-          height: auto;
           max-width: 420px;
+          height: auto;
           object-fit: cover;
           border-radius: 6px;
           cursor: pointer;
+          transition: transform 0.3s ease;
+        }
+        
+        .card:hover .cardImage {
+          transform: scale(1.02);
         }
         
         .cardTitle {
           color: #ffffff;
-          font-size: clamp(0.875rem, 2vw, 1rem);
+          font-size: 1rem;
           margin-top: 0.75rem;
         }
         
