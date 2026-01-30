@@ -45,9 +45,9 @@
   function Navbar(){
     return(
       <nav className={styles.navbar}>
-        <a href="#overview"> OverView </a>
+        <a href="#overview"> Overview </a>
         <a href="#objects"> Objects and Equipment </a>
-        <a href="#places"> Places </a>
+        <a href="#places"> Haunted Places </a>
         <a href="#games"> Games </a>
         <a href="#ghosts"> Supernatural Beings </a>
         <a href="#beliefs"> Paranormal's Beliefs </a>
@@ -90,7 +90,7 @@
             Objects and Equipments can carry memories — and some are said to carry far more than that especially haunted ones.
             View some objects and equipment that are believed to be linked to paranormal activity.
           </p>
-          <Link href="/objects" className={styles.link}>Explore Objects →</Link>
+          <Link href="/haunted_objects" className={styles.link}>Explore Objects →</Link>
           <Link href="/ghost_equipment" className={styles.link}>Explore Equipment →</Link>
         </div>
       </section>
@@ -167,7 +167,7 @@
             Sightings and encounters are often described differently depending on the entity and the location.
             Discover the different types of supernatural beings that have been reported.
           </p>
-          <Link href="/ghost" className={styles.link}>Discover Supernatural Beings →</Link>
+          <Link href="/types_of_ghosts" className={styles.link}>Discover Supernatural Beings →</Link>
 
         </div>
       </section>
