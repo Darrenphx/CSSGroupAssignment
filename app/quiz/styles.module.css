@@ -45,16 +45,30 @@
 }
 
 .questionformat button:hover:not(:disabled) {
-  background: rgba(255, 107, 107, 0.2);
-  border-color: #ff6b6b;
+  background: rgba(41, 34, 169, 0.2);
+  border-color: rgb(53, 53, 169);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+  box-shadow: 0 4px 12px rgba(20, 28, 255, 0.3);
 }
 
 .questionformat button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
   background: rgba(27, 24, 50, 0.5);
+}
+
+.questionformat button.correctOption:disabled {
+  background: rgba(46, 213, 115, 0.3);
+  border-color: #2ed573;
+  color: #2ed573;
+  opacity: 1;
+}
+
+.questionformat button.wrongOption:disabled {
+  background: rgba(255, 107, 107, 0.3);
+  border-color: #ff6b6b;
+  color: #ff6b6b;
+  opacity: 1;
 }
 
 .questionformat button:active:not(:disabled) {
@@ -85,16 +99,16 @@
 
 .nextButton {
   margin-top: 1.5rem;
-  background: linear-gradient(45deg, #ff6b6b, #ff3838) !important;
+  background: linear-gradient(45deg, rgb(73, 73, 255), rgb(57, 57, 126)) !important;
   border: none !important;
   font-weight: 700 !important;
   padding: 1rem 2rem !important;
 }
 
 .nextButton:hover:not(:disabled) {
-  background: linear-gradient(45deg, #ff3838, #ff6b6b) !important;
+  background: linear-gradient(45deg, rgb(52, 52, 205), rgb(47, 47, 103)) !important;
   transform: translateY(-3px) !important;
-  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4) !important;
+  box-shadow: 0 6px 20px rgba(11, 62, 250, 0.4) !important;
 }
 
 .finished {
@@ -131,6 +145,18 @@
   color: #feca57;
   font-weight: 700;
   font-size: 2rem;
+}
+
+.correctOption {
+  background: rgba(46, 213, 115, 0.3);
+  border-color: #2ed573;
+  color: #2ed573;
+}
+
+.wrongOption {
+  background: rgba(255, 107, 107, 0.3);
+  border-color: #ff6b6b;
+  color: #ff6b6b;
 }
 
 @keyframes fadeIn {

@@ -46,7 +46,7 @@ const questions = [
     {
         question: "What is the name of the game that is believed to act as a bridge between the living and the spirit world?",
         options: [
-            { text: "Duck duck goose", correct: true },
+            { text: "Duck duck goose", correct: false },
             { text: "Pizza board", correct: false },
             { text: "Ouija board", correct: true },
             { text: "Hide and seek", correct: false }
@@ -121,10 +121,12 @@ function Quiz() {
     const[answered, setAnswered] = useState(false);
     const[finished, setFinished] = useState(false);
     const[isCorrect, setIsCorrect] = useState(null);
+    const[selectedIndex, setSelectedIndex] = useState(null);
 
-    const handleAnswer = (correct) => {
+    const handleAnswer = (correct, index) => {
         if (!answered) {
             setIsCorrect(correct);
+            setSelectedIndex(index);
 
             if (correct) {
                 setScore(prev => prev + 1);
@@ -138,6 +140,7 @@ function Quiz() {
             setCurrentIndex(prev => prev + 1);
             setAnswered(false);
             setIsCorrect(null);
+            setSelectedIndex(null);
         }
         else {
             setFinished(true);
@@ -160,15 +163,28 @@ function Quiz() {
             <h2>Question {currentIndex + 1}</h2>
             <p>{CurrentQuestions.question}</p>
 
-            {CurrentQuestions.options.map((option, index) => (
-                <button
-                  key={index}
-                  onClick={() => handleAnswer(option.correct)}
-                  disabled={answered}
-                >
-                    {option.text}
-                </button>
-            ))}
+            {CurrentQuestions.options.map((option, index) => {
+                let buttonClass = "";
+
+                if (answered) {
+                    if (option.correct) {
+                        buttonClass = styles.correctOption;
+                    } else if (index === selectedIndex) {
+                        buttonClass = styles.wrongOption;
+                    }
+                }
+
+                return (
+                    <button
+                        key={index}
+                        onClick={() => handleAnswer(option.correct, index)}
+                        disabled={answered}
+                        className={buttonClass}
+                    >
+                        {option.text}
+                    </button>
+                );
+            })}
 
             {answered && (
                 <>
