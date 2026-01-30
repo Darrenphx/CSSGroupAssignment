@@ -18,10 +18,10 @@ export default function Yokai() {
         textAlign: "center",
       }}
     >
-      {/* Back Link */}
+
       <div style={{ alignSelf: "flex-start" }}>
         <Link
-          href="/haunted_places"
+          href="/types_of_ghosts"
           style={{
             color: "#ccc",
             textDecoration: "underline",
@@ -34,7 +34,7 @@ export default function Yokai() {
         </Link>
       </div>
 
-      {/* Heading */}
+
       <h1
         style={{
           marginTop: "1.5rem",
@@ -46,7 +46,7 @@ export default function Yokai() {
         Yōkai
       </h1>
 
-      {/* Image */}
+
       <Image
         src="/photos/yokai.jpg"
         alt="Yokai"
@@ -62,7 +62,7 @@ export default function Yokai() {
         onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
       />
 
-      {/* Description */}
+
       <p
         style={{
           marginTop: "2rem",
@@ -78,7 +78,7 @@ export default function Yokai() {
         often appearing as animal-like figures, possessed objects, or humanoids. 
         They embody the mysterious and uncanny aspects of nature and human emotions.
       </p>
-      {/* Origins Section */}
+
       <h2 style={{ marginTop: "2.5rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
         Backstory
       </h2>
@@ -112,7 +112,6 @@ export default function Yokai() {
         losing worshippers and thus their divinity, became Yōkai.
       </p>
 
-      {/* Sightings Section */}
       <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
         Sightings
       </h2>
@@ -127,13 +126,19 @@ export default function Yokai() {
           textAlign: "justify",
         }}
       >
-        There have been other reports of people seeing apparitions, shadow figures and orbs. Many EVP’s
-         (Electronic Voice Phenomena) have been recorded as well. And there is some violent poltergeist 
-         activity going on. People also get overwhelmed by the feeling of dread, screams and footsteps 
-         are heard and people have been touched by unseen hands.  
+        Yōkai often have animal-like features (such as the kappa, depicted as appearing similar to a turtle, 
+        and the tengu, commonly depicted with wings), but may also appear humanoid in appearance, such as the
+        kuchisake-onna. 
+        
+        In Japan, farmers have reportedly saw turtle-like creatures near water bodies that tried to pull people in.
+        Some villages even put up warning signs and made offerings of cucumbers to keep them away 
+        
+        Some Yōkai resembled inanimate objects (such as the tsukumogami), while others 
+        have no discernible shape. Yōkai are typically described as having spiritual or supernatural abilities, 
+        with shapeshifting being the most common trait associated with them. Yōkai that shapeshift are known 
+        as bakemono or obake.
       </p>
 
-      {/* Additional Notes (optional) */}
       <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
         Fun Fact
       </h2>
@@ -148,8 +153,8 @@ export default function Yokai() {
           textAlign: "justify",
         }}
       >
-        Inanimate objects can be considered Yōkai, and some Yōkai may not have 
-        
+        Inanimate objects can be considered Yōkai, and some Yōkai may not have any physical appearance at all. 
+        While Yōkai are viewed as monsters or dark creatures, not all of them are inherently evil.
       </p>
     </div>
   );
