@@ -1,61 +1,8 @@
-.page {
-  min-height: 100vh;
-  width: 100%;
-  padding-bottom: 4rem;
-  background: linear-gradient(to bottom, #020617, #020617);
-}
-
-.topBar {
-  height: 60px;
-  background: linear-gradient(to right, #04214a, #888);
-}
-
-.title {
-  text-align: center;
-  margin: 5rem;
-  margin-bottom: 3rem;
-  font-size: 30px;
-  color: #ffffff;
-}
-
-.placesGrid {
-  list-style: none;
-  padding: 0 2rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-.placeCard {
-  background-color: #1b1832;
-  padding: 1rem;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.placeImage {
-  width: 420px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.placeName {
-  margin-top: 0.8rem;
-  font-size: 1rem;
-  color: #ffffff;
-}
-
 .container {
   min-height: 100vh;
-  background: linear-gradient(to bottom, #020617, #020617);
-  padding-bottom: 4rem;
   width: 100%;
-  box-sizing: border-box;
+  padding-bottom: 4rem;
+  background: linear-gradient(to bottom, #020617, #020617);
 }
 
 .topBar {
@@ -66,9 +13,9 @@
 .title {
   text-align: center;
   margin: 5rem;
-  color: #ffffff;
   margin-bottom: 3rem;
   font-size: 30px;
+  color: #ffffff;
 }
 
 .grid {
@@ -81,73 +28,32 @@
 
 .card {
   background-color: #1b1832;
-  margin-bottom: 2rem;
   padding: 1rem;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
 }
 
 .cardImage {
   width: 420px;
   height: 300px;
   object-fit: cover;
-  align-items: center;
   border-radius: 6px;
   cursor: pointer;
-  transition: transform 0.3s ease;
 }
 
 .cardTitle {
-  color: #ffffff;
+  margin-top: 0.8rem;
   font-size: 1rem;
+  color: #ffffff;
 }
+.card:hover {
+          transform: scale(1.05);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
 
-@media (max-width: 1023px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 639px) {
-  .grid {
-    grid-template-columns: 1fr;
-    padding: 0 1rem;
-  }
-
-  .cardImage {
-    width: 100%;
-    max-width: 420px;
-    height: auto;
-  }
-}
-
-.placeImage,
-.cardImage {
-  transition: transform 0.3s ease;
-}
-
-.placeImage:hover,
-.cardImage:hover {
-  transform: scale(1.05);
-}
-
-.card,
-.placeCard {
-  overflow: hidden;
-}
-
-.cardImage,
-.placeImage {
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-.cardImage:hover,
-.placeImage:hover {
-  transform: scale(1.05);
-}
+.card:hover .cardImage {
+          transform: scale(1.02);
+        }
