@@ -52,8 +52,6 @@ export default function Places(){
 
     
     <div className="container">
-      {/* Top bar */}
-      <div className="topBar" />
       <h1 className="title">Top 6 Haunted Places</h1>
       <ul className="grid">
         {hauntedPlaces.map((place, index) => (
