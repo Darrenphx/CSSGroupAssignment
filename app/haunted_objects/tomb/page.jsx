@@ -81,6 +81,22 @@ export default function Tomb() {
       <h2 style={{ marginTop: "2.5rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
         Backstory
       </h2>
+
+      <Image
+        src="/photos/tomb1.jpg"
+        alt="Tomb backstory"
+        width={700}
+        height={450}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+
       <p
         style={{
           marginTop: "1rem",
@@ -103,6 +119,22 @@ export default function Tomb() {
       <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
         Fun Fact
       </h2>
+
+      <Image
+        src="/photos/tomb2.jpg"
+        alt="Tomb fun fact"
+        width={700}
+        height={450}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+
       <p
         style={{
           marginTop: "1rem",
