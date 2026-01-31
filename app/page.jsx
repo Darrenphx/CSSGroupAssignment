@@ -312,28 +312,33 @@ return(
 
     <div>
       <h2>Haunted objects:</h2>
-      <p>
-        Annabelle: https://share.google/Reeq5olh8JcF3Aqk4
-        Annabelle: https://share.google/v8Ab1iYWpVaN46oDw
-        Annabelle: https://hips.hearstapps.com/hmg-prod/images/esq110125anpannabelledig-003-6902335746892.jpg?crop=1.00xw:0.805xh;0,0.0822xh&resize=640:*
-        The Dybbuk Box: https://share.google/SFj2jPmOEmd4Hwpmk
-        The Dybbuk Box: https://share.google/Z9dRmHUGaqRvs1TJz
-        The Hope Diamond: https://assets.iflscience.com/assets/articleNo/69020/aImg/68047/hopediamond-meta.jpg
-        The Hope Diamond: https://share.google/XlZMel16sTJ0xlkdX
-        The Hope Diamond: https://share.google/V06zz4npDdEwYAHPA
-        The Hope Diamond: https://share.google/k45gZZ3Ok3lnzS8Gz
-        Robert the Doll: https://share.google/b7IMaKzEPJ9A7k1Lx
-        Robert the Doll: https://share.google/oNsL9WVz6YGheM12u
-        Robert the Doll: https://share.google/k7PtFh0XGUrzCrFQe
-        Robert the Doll: https://robertthedoll.org/
-        The Terracotta Army: https://share.google/EQIj4omACo9u03FVx
-        The Terracotta Army: https://share.google/DgHomgvIaiIN8LFIY
-        The Terracotta Army: https://th-thumbnailer.cdn-si-edu.com/0BZOOxQYppKNiRaeDAjHEZtD-tk=/fit-in/1600x0/filters:focal(3072x2048:3073x2049)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/eb/07/eb072ca5-f39d-4932-9e8c-8a837218c2e0/gettyimages-522660430.jpg
-        Tomb of Tutankhamun: https://share.google/AOXGoUpCJQaEQYFhx
-        Tomb of Tutankhamun: https://share.google/r6Q1pls7BbW6x7Wz8
-        Tomb of Tutankhamun: https://ychef.files.bbci.co.uk/1280x720/p07sdnkd.jpg
-        https://share.google/yNynaa7Td9lc8cm3y
-      </p>
+      <p>Annabelle: https://share.google/Reeq5olh8JcF3Aqk4</p>
+      <p>Annabelle: https://share.google/v8Ab1iYWpVaN46oDw</p>
+      <p>Annabelle: https://hips.hearstapps.com/hmg-prod/images/esq110125anpannabelledig-003-6902335746892.jpg?crop=1.00xw:0.805xh;0,0.0822xh&resize=640:*</p>
+
+      <p>The Dybbuk Box: https://share.google/SFj2jPmOEmd4Hwpmk</p>
+      <p>The Dybbuk Box: https://share.google/Z9dRmHUGaqRvs1TJz</p>
+
+      <p>The Hope Diamond: https://assets.iflscience.com/assets/articleNo/69020/aImg/68047/hopediamond-meta.jpg</p>
+      <p>The Hope Diamond: https://share.google/XlZMel16sTJ0xlkdX</p>
+      <p>The Hope Diamond: https://share.google/V06zz4npDdEwYAHPA</p>
+      <p>The Hope Diamond: https://share.google/k45gZZ3Ok3lnzS8Gz</p>
+
+      <p>Robert the Doll: https://share.google/b7IMaKzEPJ9A7k1Lx</p>
+      <p>Robert the Doll: https://share.google/oNsL9WVz6YGheM12u</p>
+      <p>Robert the Doll: https://share.google/k7PtFh0XGUrzCrFQe</p>
+      <p>Robert the Doll: https://robertthedoll.org/</p>
+
+      <p>The Terracotta Army: https://share.google/EQIj4omACo9u03FVx</p>
+      <p>The Terracotta Army: https://share.google/DgHomgvIaiIN8LFIY</p>
+      <p>The Terracotta Army: https://th-thumbnailer.cdn-si-edu.com/0BZOOxQYppKNiRaeDAjHEZtD-tk=/fit-in/1600x0/filters:focal(3072x2048:3073x2049)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/eb/07/eb072ca5-f39d-4932-9e8c-8a837218c2e0/gettyimages-522660430.jpg</p>
+
+      <p>Tomb of Tutankhamun: https://share.google/AOXGoUpCJQaEQYFhx</p>
+      <p>Tomb of Tutankhamun: https://share.google/r6Q1pls7BbW6x7Wz8</p>
+      <p>Tomb of Tutankhamun: https://ychef.files.bbci.co.uk/1280x720/p07sdnkd.jpg</p>
+
+      <p>https://share.google/yNynaa7Td9lc8cm3y</p>
+
     </div>
 
     <div>
@@ -404,32 +409,37 @@ return(
 
     <div>
       <h2>Supernatural beings:</h2>
-      <p>
-        Yokai: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Kyosai%2C_Yokai_image.jpg/500px-Kyosai%2C_Yokai_image.jpg
-        Yokai: https://en.wikipedia.org/wiki/Y%C5%8Dkai
-        Yokai: https://share.google/nEzQUaWBsBz4kAIIz
-        Yokai: https://share.google/6x7LMoen21zbWffmO
-        Yokai: https://share.google/aByu5WK7050mlbXOm
-        Yokai: https://share.google/JiTy0BFPeT6vsPZMY
-        Babi Ngepet: https://share.google/4m4Fz2gaAerTSeOlb
-        Babi Ngepet: https://share.google/BlFWMdLKO1qmKCQ3v
-        Toyol: https://confirmgood.com/wp-content/uploads/2023/10/toyol-2-supernaturalconfessions.jpg
-        Toyol: https://share.google/j44CtR7MrWZfQ9uqo
-        Toyol: https://share.google/0jvXMK9sufV63NY9d
-        Poltergeist: https://share.google/Sia4bh8trP20icWvK
-        Poltergeist: https://share.google/tZ1H4pHB4fArxyAC9
-        La Llorona: https://share.google/OtqQdSZG4DolxYS5N
-        La Llorona: https://share.google/Oayor0yahBmhTLFa1
-        La Llorona: https://share.google/qSnEPl7o4YOlq0Ln9
-        Bloody Mary: https://share.google/ATpx1mYznEd6nuPne
-        Bloody Mary: https://allthatsinteresting.com/bloody-mary
-        Bloody Mary: https://share.google/1Jij5cj7GXiZ6hBiK
-        Bloody Mary: https://share.google/zWfKEzV7rGNDlJDhf 
-        https://share.google/t3TgevXHyCsQ5eJtO
-        https://share.google/5T424MqfYHAmJwjco
-        https://share.google/6SkvKG4TgSEfDFx0l
-        https://share.google/RmNHIsl78f99q5MmB       
-      </p>
+      <p>Yokai: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Kyosai%2C_Yokai_image.jpg/500px-Kyosai%2C_Yokai_image.jpg</p>
+      <p>Yokai: https://en.wikipedia.org/wiki/Y%C5%8Dkai</p>
+      <p>Yokai: https://share.google/nEzQUaWBsBz4kAIIz</p>
+      <p>Yokai: https://share.google/6x7LMoen21zbWffmO</p>
+      <p>Yokai: https://share.google/aByu5WK7050mlbXOm</p>
+      <p>Yokai: https://share.google/JiTy0BFPeT6vsPZMY</p>
+
+      <p>Babi Ngepet: https://share.google/4m4Fz2gaAerTSeOlb</p>
+      <p>Babi Ngepet: https://share.google/BlFWMdLKO1qmKCQ3v</p>
+
+      <p>Toyol: https://confirmgood.com/wp-content/uploads/2023/10/toyol-2-supernaturalconfessions.jpg</p>
+      <p>Toyol: https://share.google/j44CtR7MrWZfQ9uqo</p>
+      <p>Toyol: https://share.google/0jvXMK9sufV63NY9d</p>
+
+      <p>Poltergeist: https://share.google/Sia4bh8trP20icWvK</p>
+      <p>Poltergeist: https://share.google/tZ1H4pHB4fArxyAC9</p>
+
+      <p>La Llorona: https://share.google/OtqQdSZG4DolxYS5N</p>
+      <p>La Llorona: https://share.google/Oayor0yahBmhTLFa1</p>
+      <p>La Llorona: https://share.google/qSnEPl7o4YOlq0Ln9</p>
+
+      <p>Bloody Mary: https://share.google/ATpx1mYznEd6nuPne</p>
+      <p>Bloody Mary: https://allthatsinteresting.com/bloody-mary</p>
+      <p>Bloody Mary: https://share.google/1Jij5cj7GXiZ6hBiK</p>
+      <p>Bloody Mary: https://share.google/zWfKEzV7rGNDlJDhf</p>
+
+      <p>https://share.google/t3TgevXHyCsQ5eJtO</p>
+      <p>https://share.google/5T424MqfYHAmJwjco</p>
+      <p>https://share.google/6SkvKG4TgSEfDFx0l</p>
+      <p>https://share.google/RmNHIsl78f99q5MmB</p>
+
     </div>
 
     <div>
