@@ -307,7 +307,8 @@ return(
       <h2>References</h2>
     <div>
       <h2>Homepage:</h2>
-      <p></p>
+      <p>Jumpscare audio: https://tuna.voicemod.net/sound/e7c358b2-70fe-41d3-ad1f-fee1f12bc7e8</p>
+      <p>Jumpscare: https://giphy.com/gifs/five-nights-withered-foxy-jump-QsgJi30B9ByH7tRhGV</p>
     </div>
 
     <div>
