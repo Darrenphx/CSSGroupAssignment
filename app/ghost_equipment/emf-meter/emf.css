@@ -1,0 +1,71 @@
+.emfPage {
+  min-height: 100vh;
+  padding-top: 3rem;
+  background: linear-gradient(to bottom, #0f0d1e, #1a142e);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.backWrapper {
+  align-self: flex-start;
+  margin-left: 2rem;
+}
+
+.backLink {
+  color: #ccc;
+  text-decoration: underline;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.backLink:hover {
+  color: #fff;
+}
+
+.pageTitle {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.meter {
+  margin: 3rem auto;
+  width: 400px;
+  height: 120px;
+  border: 2px solid #555;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #1b1832;
+}
+
+.meterBar {
+  width: 50px;
+  height: 60px;
+  border-radius: 6px;
+  transition: background-color 0.1s;
+}
+
+.hint {
+  opacity: 0.8;
+}
+
+.sectionTitle {
+  margin-top: 2.5rem;
+  font-size: 1.8rem;
+  font-family: "Playfair Display", serif;
+}
+
+.sectionText {
+  margin-top: 1rem;
+  line-height: 2;
+  max-width: 1000px;
+  font-size: 1.15rem;
+  color: #eee;
+  padding: 0 1rem;
+  text-align: justify;
+}
+

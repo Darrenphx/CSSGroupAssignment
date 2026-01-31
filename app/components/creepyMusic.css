@@ -1,0 +1,23 @@
+.creepyMusicBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  background: #1b1832;
+  color: white;
+
+  border: 1px solid #444;
+  border-radius: 20px;
+
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 9999;
+
+  font-size: 0.9rem;
+
+}
+
+.creepyMusicBtn:hover {
+  background: #2a2550;
+  transform: scale(1.05);
+}

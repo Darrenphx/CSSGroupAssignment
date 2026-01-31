@@ -1,11 +1,198 @@
 .questionformat {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: darkgrey;
-    height: 150px;
-    text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0f0d1e, #1a142e);
+  color: white;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
-.options {
-    flex-direction: column-reverse;
-    justify-content: space-between;
+.questionformat h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+}
+
+.questionformat p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.questionformat button {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0.75rem auto;
+  padding: 1rem 1.5rem;
+  background: rgba(27, 24, 50, 0.8);
+  border: 2px solid #444;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.questionformat button:hover:not(:disabled) {
+  background: rgba(41, 34, 169, 0.2);
+  border-color: rgb(53, 53, 169);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(20, 28, 255, 0.3);
+}
+
+.questionformat button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background: rgba(27, 24, 50, 0.5);
+}
+
+.questionformat button.correctOption:disabled {
+  background: rgba(46, 213, 115, 0.3);
+  border-color: #2ed573;
+  color: #2ed573;
+  opacity: 1;
+}
+
+.questionformat button.wrongOption:disabled {
+  background: rgba(255, 107, 107, 0.3);
+  border-color: #ff6b6b;
+  color: #ff6b6b;
+  opacity: 1;
+}
+
+.questionformat button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.feedback {
+  margin-top: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.feedbackCorrect {
+  background: rgba(46, 213, 115, 0.2);
+  color: #2ed573;
+  border: 2px solid rgba(46, 213, 115, 0.5);
+}
+
+.feedbackWrong {
+  background: rgba(255, 107, 107, 0.2);
+  color: #ff6b6b;
+  border: 2px solid rgba(255, 107, 107, 0.5);
+}
+
+.nextButton {
+  margin-top: 1.5rem;
+  background: linear-gradient(45deg, rgb(73, 73, 255), rgb(57, 57, 126)) !important;
+  border: none !important;
+  font-weight: 700 !important;
+  padding: 1rem 2rem !important;
+}
+
+.nextButton:hover:not(:disabled) {
+  background: linear-gradient(45deg, rgb(52, 52, 205), rgb(47, 47, 103)) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 6px 20px rgba(11, 62, 250, 0.4) !important;
+}
+
+.finished {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0f0d1e, #1a142e);
+  color: white;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.finished h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-weight: 700;
+  background: linear-gradient(45deg, #ff6b6b, #feca57);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.finished p {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-top: 1rem;
+}
+
+.scoreHighlight {
+  color: #feca57;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.correctOption {
+  background: rgba(46, 213, 115, 0.3);
+  border-color: #2ed573;
+  color: #2ed573;
+}
+
+.wrongOption {
+  background: rgba(255, 107, 107, 0.3);
+  border-color: #ff6b6b;
+  color: #ff6b6b;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .questionformat {
+    padding: 2rem 1rem;
+  }
+
+  .questionformat h2 {
+    font-size: 1.5rem;
+  }
+
+  .questionformat p {
+    font-size: 1.1rem;
+  }
+
+  .questionformat button {
+    max-width: 100%;
+    padding: 0.875rem 1.25rem;
+  }
+
+  .finished h2 {
+    font-size: 2rem;
+  }
+
+  .finished p {
+    font-size: 1.2rem;
+  }
 }
