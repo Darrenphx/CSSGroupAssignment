@@ -4,7 +4,7 @@
   import Image from "next/image";
   import styles from "./page.module.css";
   import Link from "next/link";
-  import { useState } from "react";
+  import { useState, useEffect } from "react";
 
 
   function Intro() {
@@ -238,6 +238,24 @@
 
 function Jumpscare() {
   const [show, setShow] = useState(false);
+  const soundRef = React.useRef(null);
+
+
+  useEffect(() => {
+    if (show) {
+      const sound = new Audio("/audio/jumpscare2.mp3");
+      //https://tuna.voicemod.net/sound/e7c358b2-70fe-41d3-ad1f-fee1f12bc7e8
+      sound.volume = 1;
+      sound.play();
+    }
+  }, [show]);
+
+  useEffect(() => {
+    if (show && soundRef.current) {
+      soundRef.current.currentTime = 0; // rewind
+      soundRef.current.play();
+    }
+  }, [show]);
 
   return (
     <div className={styles.clickme}>
@@ -254,7 +272,8 @@ function Jumpscare() {
           onClick={() => setShow(false)}
         >
          <Image
-            src="/photos/hover-jaypopchannel.gif"
+            src="/photos/fnaf.gif"
+            //https://giphy.com/gifs/five-nights-withered-foxy-jump-QsgJi30B9ByH7tRhGV
             alt="Jumpscare"
             width={600}
             height={600}
