@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./styles.modules.css";
+import styles from "./styles.module.css";
 
 export default function Yokai() {
   return (
@@ -103,7 +103,33 @@ export default function Yokai() {
         brought good fortune; violent spirits, known as ara-mitama, brought ill fortune,
         such as illness and natural disasters. Neither type of spirit was considered to
         be Yōkai.  
+      </p>
+      <Image
+        src="/photos/yokai1.jpg"
+        alt="Yokai backstory"
+        width={650}
+        height={400}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
 
+      <p
+        style={{
+          marginTop: "1rem",
+          lineHeight: "2",
+          maxWidth: "900px",
+          fontSize: "1.15rem",
+          color: "#eee",
+          padding: "0 1rem",
+          textAlign: "justify",
+        }}
+      >
         Rituals for converting ara-mitama into nigi-mitama were performed, aiming
         to quell malevolent spirits, prevent misfortune and alleviate the fear arising 
         from phenomena and events that otherwise had no explanation. The ritual for 
@@ -116,6 +142,51 @@ export default function Yokai() {
       <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
         Sightings
       </h2>
+      <div className={styles.imageRow}>
+        <Image
+        src="/photos/yokai2.jpg"
+        alt="Yokai sighting 1"
+        width={350}
+        height={400}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+      <Image
+        src="/photos/yokai3.jpg"
+        alt="Yokai sighting 2"
+        width={350}
+        height={400}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+      <Image
+        src="/photos/yokai4.jpg"
+        alt="Yokai sighting 3"
+        width={350}
+        height={400}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+      
+      </div>
       <p
         style={{
           marginTop: "1rem",
@@ -130,10 +201,64 @@ export default function Yokai() {
         Yōkai often have animal-like features (such as the kappa, depicted as appearing similar to a turtle, 
         and the tengu, commonly depicted with wings), but may also appear humanoid in appearance, such as the
         kuchisake-onna. 
-        
+      </p>
+
+      <Image
+        src="/photos/yokai5.jpg"
+        alt="Yokai sighting 4"
+        width={650}
+        height={400}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+
+      <p
+        style={{
+          marginTop: "1rem",
+          lineHeight: "2",
+          maxWidth: "900px",
+          fontSize: "1.15rem",
+          color: "#eee",
+          padding: "0 1rem",
+          textAlign: "justify",
+        }}
+      >
         In Japan, farmers have reportedly saw turtle-like creatures near water bodies that tried to pull people in.
-        Some villages even put up warning signs and made offerings of cucumbers to keep them away 
-        
+        Some villages even put up warning signs and made offerings of cucumbers to keep them away.
+      </p>
+
+      <Image
+        src="/photos/yokai6.jpg"
+        alt="Yokai sighting 5"
+        width={250}
+        height={345}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+
+      <p
+        style={{
+          marginTop: "1rem",
+          lineHeight: "2",
+          maxWidth: "900px",
+          fontSize: "1.15rem",
+          color: "#eee",
+          padding: "0 1rem",
+          textAlign: "justify",
+        }}
+      >
         Some Yōkai resembled inanimate objects (such as the tsukumogami), while others 
         have no discernible shape. Yōkai are typically described as having spiritual or supernatural abilities, 
         with shapeshifting being the most common trait associated with them. Yōkai that shapeshift are known 
@@ -143,6 +268,21 @@ export default function Yokai() {
       <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
         Fun Fact
       </h2>
+      <Image
+        src="/photos/yokai7.jpg"
+        alt="Yokai fun fact"
+        width={250}
+        height={345}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+
       <p
         style={{
           marginTop: "1rem",

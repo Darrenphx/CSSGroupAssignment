@@ -118,9 +118,7 @@ export default function SingaporeBeliefs() {
             <div key={index} className="sg-card">
               <h3 className="sg-card-title">{belief.title}</h3>
               <p className="sg-card-content">{belief.description}</p>
-              <p style={{ color: '#ff6b6b', marginTop: '0.5rem', fontSize: '0.9rem' }}>
-                Significance: {belief.significance}
-              </p>
+              <p className="sg-significance">Significance: {belief.significance}</p>
             </div>
           ))}
         </div>
@@ -154,9 +152,7 @@ export default function SingaporeBeliefs() {
           </p>
         </div>
 
-        <h3 style={{ marginTop: '2rem', color: '#fff', fontSize: '1.3rem' }}>
-          Active Investigation Groups:
-        </h3>
+        <h3 className="sg-subheading">Active Investigation Groups:</h3>
         <ul className="sg-list">
           {investigationGroups.map((group, index) => (
             <li key={index}>{group}</li>
@@ -198,7 +194,7 @@ export default function SingaporeBeliefs() {
           and local accounts. Always respect local beliefs and private property when 
           exploring paranormal topics in Singapore.
         </p>
-        <p style={{ marginTop: '1rem', fontSize: '0.9rem' }}>
+        <p className="sg-footnote-secondary">
           Singapore's paranormal landscape reflects its unique multicultural identity, 
           blending traditional Asian beliefs with modern urban experiences.
         </p>

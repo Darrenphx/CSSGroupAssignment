@@ -84,6 +84,22 @@ export default function Babi() {
       <h2 style={{ marginTop: "2.5rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
         Backstory
       </h2>
+
+      <Image
+        src="/photos/babi1.jpeg"
+        alt="Babi backstory"
+        width={250}
+        height={345}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+
       <p
         style={{
           marginTop: "1rem",
@@ -101,7 +117,34 @@ export default function Babi() {
         and jewelry, disappear and are carried away by the Babi Ngepet. If the mission is successful, 
         by the time the Babi Ngepet safely returns home and transform back into human form, the black robe 
         will be filled with the stolen money and jewelry.
+      </p>
 
+      <Image
+        src="/photos/babi2.jpg"
+        alt="Babi backstory"
+        width={290}
+        height={345}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+
+      <p
+        style={{
+          marginTop: "1rem",
+          lineHeight: "2",
+          maxWidth: "900px",
+          fontSize: "1.15rem",
+          color: "#eee",
+          padding: "0 1rem",
+          textAlign: "justify",
+        }}
+      >
         The person that practices Babi Ngepet black magic needs assistance from another person. The assistant's 
         task is to stay home and guard the lit candle floating on the basic of water while the Babi Ngepet 
         is in action. If the candle flame is shaking, fading or almost out, it is a sign that the Babi Ngepet is 
@@ -112,6 +155,22 @@ export default function Babi() {
       <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
         Sightings
       </h2>
+
+      <Image
+        src="/photos/babi3.jpg"
+        alt="Babi sighting"
+        width={450}
+        height={345}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+
       <p
         style={{
           marginTop: "1rem",
@@ -132,6 +191,22 @@ export default function Babi() {
       <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
         Fun Fact
       </h2>
+
+      <Image
+        src="/photos/babi4.jpg"
+        alt="Babi fun fact"
+        width={450}
+        height={345}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+
       <p
         style={{
           marginTop: "1rem",

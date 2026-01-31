@@ -54,14 +54,6 @@
   transform: scale(1.02);
 }
 
-.imageRow{
-  display: flex;
-  gap: 1.5rem;        /* space between images */
-  justify-content: center;
-  align-items: center;
-  margin: 2rem 0;
-}
-
 .Image:hover {
   transform: scale(1.02);
 }

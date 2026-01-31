@@ -98,6 +98,22 @@ export default function Annabelle() {
         named Annabelle Higgins. The Warrens claimed the doll was demonically possessed and subsequently 
         placed it in a display box at their Occult Museum in Monroe, Connecticut.
       </p>
+
+      <Image
+        src="/photos/annabelle1.jpg"
+        alt="Annabelle backstory"
+        width={700}
+        height={450}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+
       <p
         style={{
           marginTop: "1rem",
@@ -117,6 +133,22 @@ export default function Annabelle() {
       <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
         Fun Fact
       </h2>
+
+      <Image
+        src="/photos/annabelle2.jpg"
+        alt="Annabelle fun fact"
+        width={700}
+        height={450}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+      
       <p
         style={{
           marginTop: "1rem",
