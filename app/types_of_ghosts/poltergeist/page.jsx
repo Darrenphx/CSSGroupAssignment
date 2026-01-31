@@ -79,6 +79,22 @@ export default function Poltergeist() {
       <h2 style={{ marginTop: "2.5rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
         Backstory
       </h2>
+
+      <Image
+        src="/photos/poltergeist1.jpg"
+        alt="Poltergeist backstory"
+        width={500}
+        height={345}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+
       <p
         style={{
           marginTop: "1rem",
@@ -102,6 +118,22 @@ export default function Poltergeist() {
       <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
         Sightings
       </h2>
+
+      <Image
+        src="/photos/poltergeist2.jpg"
+        alt="Poltergeist sighting"
+        width={500}
+        height={345}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+
       <p
         style={{
           marginTop: "1rem",
@@ -121,6 +153,22 @@ export default function Poltergeist() {
       <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
         Fun Fact
       </h2>
+
+      <Image
+        src="/photos/poltergeist3.jpg"
+        alt="Poltergeist fun fact"
+        width={500}
+        height={345}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+
       <p
         style={{
           marginTop: "1rem",

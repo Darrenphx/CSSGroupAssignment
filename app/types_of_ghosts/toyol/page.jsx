@@ -99,6 +99,22 @@ export default function Toyol() {
         far back as pre-Islamic Arab society. Some have linked this to the prevalence of infanticide that took place 
         during that time.
       </p>
+
+      <Image
+        src="/photos/toyol1.jpg"
+        alt="Toyol backstory"
+        width={450}
+        height={345}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+
       <p
         style={{
           marginTop: "1rem",
@@ -135,6 +151,22 @@ export default function Toyol() {
         bottle on coastal shores. The toyol was handed over to the local state museum, where the director noted 
         its red eyes and black clothing.
       </p>
+
+      <Image
+        src="/photos/toyol2.jpg"
+        alt="Toyol sighting"
+        width={370}
+        height={400}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+
       <p
         style={{
           marginTop: "1rem",
@@ -156,6 +188,22 @@ export default function Toyol() {
       <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
         Fun Fact
       </h2>
+
+      <Image
+        src="/photos/toyol3.jpg"
+        alt="Toyol fun fact"
+        width={370}
+        height={400}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+
       <p
         style={{
           marginTop: "1rem",

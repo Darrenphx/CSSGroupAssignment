@@ -48,10 +48,10 @@ export default function Box() {
 
 
       <Image
-        src="/photos/box.jpg"
+        src="/photos/dybbuk.jpg"
         alt="Box"
-        width={700}
-        height={450}
+        width={500}
+        height={350}
         style={{
           marginTop: "2rem",
           borderRadius: "12px",
@@ -82,6 +82,22 @@ export default function Box() {
       <h2 style={{ marginTop: "2.5rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
         Backstory
       </h2>
+
+      <Image
+        src="/photos/dybbuk1.jpg"
+        alt="Box backstory"
+        width={500}
+        height={350}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+
       <p
         style={{
           marginTop: "1rem",
@@ -104,6 +120,22 @@ export default function Box() {
       <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
         Fun Fact
       </h2>
+
+      <Image
+        src="/photos/dybbuk2.jpg"
+        alt="Box fun fact"
+        width={500}
+        height={325}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+
       <p
         style={{
           marginTop: "1rem",

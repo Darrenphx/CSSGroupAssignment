@@ -1,0 +1,159 @@
+/* Singapore Beliefs Page Styles - Add these to globals.css */
+.sg-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0f0d1e, #1a142e);
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.sg-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sg-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+  background: linear-gradient(45deg, #ff6b6b, #feca57);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sg-subtitle {
+  font-size: 1.1rem;
+  color: #ccc;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.sg-flag {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.sg-section {
+  background: rgba(27, 24, 50, 0.8);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-left: 4px solid #ff6b6b;
+}
+
+.sg-section-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sg-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .sg-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .sg-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.sg-card {
+  background: rgba(40, 35, 75, 0.8);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s;
+  border: 1px solid #333;
+}
+
+.sg-card:hover {
+  transform: translateY(-5px);
+  border-color: #ff6b6b;
+}
+
+.sg-card-title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.sg-card-content {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.sg-significance {
+  color: #ff6b6b;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.sg-highlight {
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+.sg-list {
+  list-style: none;
+  padding: 0;
+}
+
+.sg-list li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #ccc;
+}
+
+.sg-list li:before {
+  content: "👻";
+  position: absolute;
+  left: 0;
+}
+
+.sg-caution {
+  background: rgba(255, 107, 107, 0.1);
+  border: 1px solid rgba(255, 107, 107, 0.3);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.sg-caution h3 {
+  color: #ff6b6b;
+  margin-bottom: 1rem;
+}
+
+.sg-subheading {
+  margin-top: 2rem;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.sg-footnote {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #333;
+  color: #888;
+  font-style: italic;
+}
+
+.sg-footnote-secondary {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}

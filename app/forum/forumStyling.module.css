@@ -1,4 +1,4 @@
-
+/* Forum Page Styles */
 .container {
   min-height: 100vh;
   background: linear-gradient(to bottom, #0f0d1e, #1a142e);
@@ -47,9 +47,11 @@
   margin-bottom: 1.5rem;
   color: #fff;
 }
+
 .form-group {
   margin-bottom: 1.5rem;
 }
+
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
@@ -247,9 +249,11 @@
   border-color: #ff6b6b;
   color: #fff;
 }
+
 .comments {
   color: #888;
 }
+
 .no-posts {
   text-align: center;
   padding: 3rem;
@@ -356,11 +360,13 @@
   position: relative;
   color: #ccc;
 }
+
 .sg-list li:before {
-  content: "";
+  content: "👻";
   position: absolute;
   left: 0;
 }
+
 .sg-caution {
   background: rgba(255, 107, 107, 0.1);
   border: 1px solid rgba(255, 107, 107, 0.3);
@@ -460,4 +466,3 @@
     grid-template-columns: 1fr !important;
   }
 }
- 
