@@ -51,3 +51,26 @@
           transform: scale(1.05);
           box-shadow: 0 8px 20px rgba(255, 87, 87, 0.5);
         }
+
+        @media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    margin: 3rem 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .cardImage {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+  }
+
+  .cardTitle {
+    font-size: 0.95rem;
+  }
+}
