@@ -478,14 +478,10 @@ return(
 <p>https://www.vice.com/en/article/the-7-most-haunted-places-on-earth-and-why-we-keep-visiting-them/</p>
     </div>
 
-    <div>
-      <h2>Singapore beliefs:</h2>
-      <p></p>
-    </div>
 
     <div>
       <h2>Ghost evidence forum:</h2>
-      <p></p>
+      <p>https://dejiki.com/2016/10/uss-hhn6-old-changi-hospital-haunted-house/</p>
     </div>
     </div>
     
