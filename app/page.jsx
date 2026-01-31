@@ -307,6 +307,12 @@ return(
       <h2>References</h2>
     <div>
       <h2>Homepage:</h2>
+      <p>HOME image: https://s.yimg.com/ny/api/res/1.2/BYnBuhdci0bJRU4yMMuxXA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD02OTk7Y2Y9d2VicA--/https://media.zenfs.com/en/stacker_642/ce1e6e2c4284cc819da9aa2e20aedc90</p>
+      <p>Objects and Equipment: https://www.wisconsinfrights.com/wp-content/uploads/2023/04/ghost-hunting-equipment-kit-768x768.jpg?odnHeight=372&odnWidth=372&odnBg=FFFFFF</p>
+      <p>Places: https://store-images.s-microsoft.com/image/apps.9401.14117194001676808.36a39ac0-3293-4081-9b0e-897edab1495d.3eed53b4-ed6b-4011-81af-928eebc1774e?q=90&w=480&h=270</p>
+      <p>Games: https://www.astrovikramsharma.com/img/services/voodoo-black-magic-specialist.webp</p>
+      <p>Supernatural: https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTYsK-VaeoLdYdXkwCXq_1MmpvpbXfNh437FEUBRy-oUL0gb6R</p>
+      <p>Beliefs: https://neurosciencenews.com/files/2024/11/paranormal-belief-stress-neurosicence-770x513.jpg</p>
       <p>Jumpscare audio: https://tuna.voicemod.net/sound/e7c358b2-70fe-41d3-ad1f-fee1f12bc7e8</p>
       <p>Jumpscare: https://giphy.com/gifs/five-nights-withered-foxy-jump-QsgJi30B9ByH7tRhGV</p>
       <p>creepy audio: https://pixabay.com/sound-effects/search/horror/</p>
@@ -446,7 +452,13 @@ return(
 
     <div>
       <h2>Games:</h2>
-      <p></p>
+      <p>Games: https://www.astrovikramsharma.com/img/services/voodoo-black-magic-specialist.webp</p>
+      <p>Ouija Board: https://img.freepik.com/free-photo/ouija-board-candles-arrangement_23-2149409514.jpg?semt=ais_hybrid&w=740&q=80</p>
+      <p>Bloody Mary: https://www.shutterstock.com/image-photo/girl-ghost-woman-death-horror-260nw-2184702315.jpg</p>
+      <p>Red Door Yellow Door: https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRR0Nn8yPtiVYc-F5TAyDk2jqtFy4cMCpuJDmACEZMvpc6sneV-</p>
+      <p>Elevator Game: https://static.wikia.nocookie.net/hideandgokill/images/9/9a/Elevator_game.jpg/revision/latest/smart/width/250/height/250?cb=20161226123620</p>
+      <p>The Four Corners: https://www.wikihow.com/images/e/e2/Play-Four-Corners-Step-14.jpg</p>
+      <p>Top 10 Paranormal Games: https://www.youtube.com/watch?v=VoRjkk8YFRo</p>
     </div>
 
     <div>
