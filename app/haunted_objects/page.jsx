@@ -41,9 +41,6 @@ export default function Objects() {
    return (
     
     <div className="container">
-      {/* Top bar */}
-      <div className="topBar"
-      />
       <h1 className="title"
       
       >Haunted Objects</h1>

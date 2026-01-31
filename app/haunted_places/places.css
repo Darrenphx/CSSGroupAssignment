@@ -3,11 +3,7 @@
   width: 100%;
   padding-bottom: 4rem;
   background: linear-gradient(to bottom, #020617, #020617);
-}
-
-.topBar {
-  height: 60px;
-  background: linear-gradient(to right, #04214a, #888);
+  padding-top: 1px;
 }
 
 .title {
