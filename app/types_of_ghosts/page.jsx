@@ -43,9 +43,6 @@ export default function Supernatural(){
    return (
     
     <div className="container">
-      {/* Top bar */}
-      <div className="topBar"
-      />
       <h1 className="title"
       
       >Types of Supernatural Beings</h1>
