@@ -27,9 +27,9 @@
 }
 
 .pageTitle {
-  text-align: center;
   font-size: 3rem;
   margin: 0;
+  font-family: "Playfair Display", serif;
 }
 
 .podContainer {
