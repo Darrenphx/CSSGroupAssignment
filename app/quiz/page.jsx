@@ -158,7 +158,7 @@ function Quiz() {
     if (!started) {
         return (
             <div className={styles.questionFormat}>
-                <h2>Are you truly prepared to tes your knowledge about the paranormal?</h2>
+                <h2>Are you truly prepared to test your knowledge about the paranormal?</h2>
                 <input
                     type="text" 
                     value={playerName}
