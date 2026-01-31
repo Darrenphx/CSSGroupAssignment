@@ -36,8 +36,6 @@ export default function Equipment(){
 
    return (
     <div className="equipmentPage">
-      {/* Top bar */}
-      <div className="topBar"/>
       <h1  className="pageTitle"
       >Ghost Equipment</h1>
       <ul className="equipmentGrid">
