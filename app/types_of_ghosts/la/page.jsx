@@ -94,7 +94,36 @@ export default function La() {
         The earliest documentation of La Llorona is traced back to 1550 in Mexico City. But there are theories
         about her story being connected to specific Aztec mythological creation stories. "The Hungry Woman" includes
         a wailing woman constantly crying for food, which has been compared to La Llorona's signature 
-        nocturnal wailing for her children. The motherly nature of La Llorona's tragedy has been compared to Cihuacoatl, 
+        nocturnal wailing for her children. 
+      </p>
+
+      <Image
+        src="/photos/la1.jpg"
+        alt="La Llorona backstory"
+        width={700}
+        height={450}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+
+      <p
+        style={{
+          marginTop: "1rem",
+          lineHeight: "2",
+          maxWidth: "900px",
+          fontSize: "1.15rem",
+          color: "#eee",
+          padding: "0 1rem",
+          textAlign: "justify",
+        }}
+      >
+        The motherly nature of La Llorona's tragedy has been compared to Cihuacoatl, 
         an Aztec goddess deity of motherhood. Her seeking of children to keep for herself is significantly compared to 
         Coatlicue, known as "Our Lady Mother" or Tonantzin (who is also comparable to the Virgen de Guadalupe, another
         significant mother figure in Mexican culture), also a monster that devours filth or sin.
@@ -103,6 +132,22 @@ export default function La() {
       <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
         Sightings
       </h2>
+
+      <Image
+        src="/photos/la2.jpg"
+        alt="La Llorona sighting"
+        width={700}
+        height={450}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+
       <p
         style={{
           marginTop: "1rem",
@@ -121,6 +166,22 @@ export default function La() {
       <h2 style={{ marginTop: "2rem", fontSize: "1.8rem", fontFamily: "'Playfair Display', serif" }}>
         Fun Fact
       </h2>
+
+      <Image
+        src="/photos/la3.jpg"
+        alt="La Llorona fun fact"
+        width={600}
+        height={400}
+        style={{
+          marginTop: "2rem",
+          borderRadius: "12px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
+          transition: "transform 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+
       <p
         style={{
           marginTop: "1rem",
