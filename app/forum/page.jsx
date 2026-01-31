@@ -15,7 +15,6 @@ export default function ForumPage() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Sample initial posts
   useEffect(() => {
     const samplePosts = [
       {
