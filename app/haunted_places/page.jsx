@@ -47,6 +47,9 @@ export default function Places(){
    return (
     <>
 
+
+    
+
     
     <div className="container">
       {/* Top bar */}
