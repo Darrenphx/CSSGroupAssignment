@@ -1,18 +1,29 @@
 //test
 
-"use client"; 
-import styles from "./navbar.module.css"
-import {useState} from "react";
+"use client";
+
+import styles from "./navbar.module.css";
+import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
-
-
-
-
-export default function Navbar(){
-    const [dropdownvisible, setdropdownvisible] = useState(false);
-    return(
-    <nav className={styles.navbar}>
+export default function Navbar() {
+  const [dropdownvisible, setdropdownvisible] = useState(false);
+  return (
+    <>
+      <div className={styles.header}>
+        <Link href="/" className={styles.headerLink}>
+          <Image
+            src="/photos/ghost-8250317_640.png"
+            alt="Logo"
+            width={48}
+            height={48}
+            className={styles.logo}
+          />
+          <span className={styles.siteName}>The Abandoned Archive</span>
+        </Link>
+      </div>
+      <nav className={styles.navbar}>
     <Link className={styles.navitem} href="/"> Home </Link>
     <Link className={styles.navitem} href="/ghost_equipment"> Ghost Equipment </Link>
     <Link className={styles.navitem} href="/haunted_places"> Haunted Places </Link>
@@ -41,7 +52,7 @@ export default function Navbar(){
         
         
     </div>
-
-    </nav>
-    )
+      </nav>
+    </>
+  );
 }

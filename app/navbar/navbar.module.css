@@ -29,10 +29,13 @@
 }
 
 .siteName {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-family: 'Impact', 'Arial Black', 'Tahoma', sans-serif;
   font-weight: 700;
   color: #e8e8e8;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #3220d0, 0 0 15px #3220d0;
 }
 
 .navbar {
