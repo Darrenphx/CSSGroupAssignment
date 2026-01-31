@@ -229,17 +229,9 @@
     );
   }
 
-  function Credits(){
-    return(
-      <h3 className={styles.credits}> Website made by Chuansenn, Darren, Mahima and Yu Yao </h3>
-    );
-  }
-
-
 function Jumpscare() {
   const [show, setShow] = useState(false);
   const soundRef = React.useRef(null);
-
 
   useEffect(() => {
     if (show) {
@@ -283,6 +275,53 @@ function Jumpscare() {
       )}
     </div>
   );
+}
+
+function Credits() {
+return(
+  <>
+    <h3 className={styles.credits}> Website made by Chuansenn, Darren, Mahima and Yu Yao </h3>
+    <div className={styles.ref}>
+      <h2>References</h2>
+
+    <div>
+      <h2>Haunted objects:</h2>
+      <p></p>
+    </div>
+
+    <div>
+      <h2>Haunted Places:</h2>
+      <p></p>
+    </div>
+
+    <div>
+      <h2>Supernatural beings:</h2>
+      <p></p>
+    </div>
+
+    <div>
+      <h2>Games:</h2>
+      <p></p>
+    </div>
+
+    <div>
+      <h2>Ghost equipment:</h2>
+      <p></p>
+    </div>
+
+    <div>
+      <h2>Singapore beliefs:</h2>
+      <p></p>
+    </div>
+
+    <div>
+      <h2>Ghost evidence forum:</h2>
+      <p></p>
+    </div>
+    </div>
+    
+  </>
+);
 }
 
 
