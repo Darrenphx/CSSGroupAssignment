@@ -2,13 +2,11 @@
   min-height: 100vh;
   width: 100%;
   padding-bottom: 4rem;
+  padding-top: 1px;
   background: linear-gradient(to bottom, #020617, #020617);
 }
 
-.topBar {
-  height: 60px;
-  background: linear-gradient(to right, #04214a, #888);
-}
+
 
 .title {
   text-align: center;
