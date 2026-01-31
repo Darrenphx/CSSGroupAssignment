@@ -276,6 +276,28 @@ function Jumpscare() {
     </div>
   );
 }
+  export default function Page(){
+    return(
+      <div className={styles.background}>
+        <Intro/>
+        <Heading/>
+        <Navbar/>
+        <Overview/>
+        <Objects/>
+        <Places/>
+        <Games/>
+        <Ghosts/>
+        <Beliefs/>
+        <Forum_Quiz/>
+        <Jumpscare/>
+        <Credits/>
+        
+      
+
+      </div>
+      
+    );
+  }
 
 function Credits() {
 return(
@@ -291,7 +313,68 @@ return(
 
     <div>
       <h2>Haunted Places:</h2>
-      <p></p>
+      <p>https://salemghosts.com/the-most-haunted-places-in-salem/</p>
+ 
+<p>https://thelittlehouseofhorrors.com/corvin-castle/</p>
+ 
+<p>https://usghostadventures.com/haunted-houses/lizzie-borden-house/</p>
+ 
+<p>https://www.visitphilly.com/things-to-do/attractions/eastern-state-penitentiary/</p>
+ 
+<p>https://matadornetwork.com/read/lithuania-hill-of-crosses/</p>
+ 
+<p>https://www.hauntedrooms.co.uk/the-tower-of-london-ghosts</p>
+ 
+<p>https://www.vice.com/en/article/the-7-most-haunted-places-on-earth-and-why-we-keep-visiting-them/</p>
+ 
+<p>Corvin</p>
+ 
+<p>https://amyscrypt.com/corvin-castle-legends-romania/</p>
+ 
+<p>https://becomingthemuse.net/2015/11/03/of-footsteps-in-the-dark/</p>
+ 
+<p>https://www.freepik.com/premium-ai-image/haunted-house-scene-with-ghostly-apparition-appearing-top-grand-staircase-shrouded-mist_354961458.htm</p>
+ 
+<p>hill of crosses</p>
+ 
+<p>https://allthatsinteresting.com/hill-of-crosses</p>
+ 
+<p>https://www.thesun.co.uk/news/7116742/ghost-hunter-paranormal-activity-roche-abbey-yorkshire/</p>
+ 
+<p>https://deepbaltic.com/2016/05/21/the-hill-of-crosses-a-monument-to-the-defiant-spirit-of-lithuania/</p>
+ 
+<p>lizzie borden</p>
+ 
+<p>https://www.facebook.com/UEPerimeters/photos/a.382279002336409/389196508311325/?id=359014327996210</p>
+ 
+<p>https://lizzie-borden.com/</p>
+ 
+<p>https://www.darkwhimsicalart.com/blogs/news/a-night-in-the-infamous-lizzie-borden-house-ghost-investigation-and-haunting-history?srsltid=AfmBOoppqZeT2F06AeG9BXpUVKqAlSb3UrpYUCnXhDs8FM3JvTBqHHV9</p>
+ 
+<p>penitientiary</p>
+ 
+<p>//https://adventure.com/eastern-state-penitentiary/</p>
+ 
+<p>https://imgur.com/a/yWSBCJ2</p>
+ 
+<p>https://www.sheptonmalletprison.com/paranormal-news/ghost-stories-from-behind-bars-the-white-lady/</p>
+ 
+<p>Salem</p>
+ 
+<p>https://949whom.com/witch-house-cowin-salem-haunted/</p>
+ 
+<p>https://redskiesmagazinessu.wordpress.com/2015/01/18/salem-ghost-tour/</p>
+ 
+<p>https://oddencounters.com/ghosts/Real-Ghost-Photos_Salem-Cemetery.html</p>
+ 
+<p>tower</p>
+ 
+<p>https://salemghosts.com/the-most-haunted-places-in-salem/</p>
+ 
+<p>https://thelittlehouseofhorrors.com/corvin-castle/</p>
+ 
+<p>https://usghostadventures.com/haunted-houses/lizzie-borden-house/</p>
+ 
     </div>
 
     <div>
@@ -328,27 +411,7 @@ return(
 
 
 
-  export default function Page(){
-    return(
-      <div className={styles.background}>
-        <Intro/>
-        <Heading/>
-        <Navbar/>
-        <Overview/>
-        <Objects/>
-        <Places/>
-        <Games/>
-        <Ghosts/>
-        <Beliefs/>
-        <Forum_Quiz/>
-        <Credits/>
-        <Jumpscare/>
-      
 
-      </div>
-      
-    );
-  }
 
 
 
