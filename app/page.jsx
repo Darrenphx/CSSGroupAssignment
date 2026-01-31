@@ -301,7 +301,7 @@ function Jumpscare() {
 
 function Credits() {
 return(
-  <>
+  <div className={styles.reference}>
     <h3 className={styles.credits}> Website made by Chuansenn, Darren, Mahima and Yu Yao </h3>
     <div className={styles.ref}>
       <h2>References</h2>
@@ -485,7 +485,7 @@ return(
     </div>
     </div>
     
-  </>
+  </div>
 );
 }
 
