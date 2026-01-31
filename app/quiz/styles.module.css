@@ -329,19 +329,19 @@
 }
 
 @media (max-width: 768px) {
-  .questionformat {
+  .questionFormat {
     padding: 2rem 1rem;
   }
 
-  .questionformat h2 {
+  .questionFormat h2 {
     font-size: 1.5rem;
   }
 
-  .questionformat p {
+  .questionFormat p {
     font-size: 1.1rem;
   }
 
-  .questionformat button {
+  .questionFormat button {
     max-width: 100%;
     padding: 0.875rem 1.25rem;
   }
@@ -354,3 +354,4 @@
     font-size: 1.2rem;
   }
 }
+

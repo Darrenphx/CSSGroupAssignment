@@ -231,6 +231,7 @@
 
   function Credits(){
     return(
+      
       <h3 className={styles.credits}> Website made by Chuansenn, Darren, Mahima and Yu Yao </h3>
     );
   }

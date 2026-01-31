@@ -124,17 +124,79 @@
 
 
 @media (max-width: 900px) {
-  .section {
-    grid-template-columns: 1fr;
+  .game {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .gameimage {
+    margin: 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .gameimage img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .gamedetails {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding: 0 1.25rem;
+    align-items: center;
     text-align: center;
   }
 
-  .forumquizgrid {
-    grid-template-columns: 1fr;
+  .game1text,
+  .game1textheader {
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .title {
+    font-size: 1.8rem;
+    padding: 0 1rem;
+    text-align: center;
   }
 
-  .navbar {
-    flex-wrap: wrap;
-    height: auto;
+  .video {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .video iframe {
+    margin-bottom: 6vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .game {
+    margin-bottom: 4rem;
+  }
+
+  .gameimage {
+    margin-bottom: 1.5rem;
+  }
+
+  .gamedetails {
+    margin-bottom: 2.5rem;
+  }
+
+  .video {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  .videocredit {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    padding: 0 1rem;
   }
 }
