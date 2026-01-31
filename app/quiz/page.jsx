@@ -155,6 +155,17 @@ function Quiz() {
         }
     };
 
+    const restartQuiz = () => {
+        setCurrentIndex(0);
+        setScore(0);
+        setAnswered(false);
+        setFinished(false);
+        setIsCorrect(null);
+        setSelectedIndex(null);
+        setStarted(false);
+        setPlayerName("");
+    };
+
     if (!started) {
         return (
             <div className={styles.questionFormat}>
@@ -196,6 +207,11 @@ function Quiz() {
                         ))}
                     </ol>
                 </div>
+
+                <button onClick={restartQuiz} className={styles.retryButton}>
+                    Try Again
+                </button>
+
             </div>
         );
     }

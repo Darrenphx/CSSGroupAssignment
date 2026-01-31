@@ -290,6 +290,33 @@
   margin-right: auto !important;
 }
 
+.retryButton {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 1.5rem auto;
+  padding: 1rem 1.5rem;
+
+  background: rgba(27, 24, 50, 0.8);
+  border: 2px solid #444;
+  border-radius: 8px;
+
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.retryButton:hover:not(:disabled) {
+  background: rgba(41, 34, 169, 0.2);
+  border-color: rgb(53, 53, 169);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(20, 28, 255, 0.3);
+}
+
+
 @keyframes fadeIn {
   from {
     opacity: 0;
