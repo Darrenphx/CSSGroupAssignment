@@ -79,3 +79,31 @@
   font-size: 0.9rem;
   text-decoration: underline;
 }
+
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2rem;
+    margin: 3rem 1rem;
+  }
+
+  .equipmentGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .equipmentName {
+    font-size: 1.5rem;
+  }
+
+  .equipmentImage {
+    width: 120px;
+    height: 110px;
+    margin-bottom: 1.5rem;
+  }
+
+  .equipmentDetails {
+    font-size: 0.95rem;
+  }
+}

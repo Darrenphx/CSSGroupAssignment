@@ -81,3 +81,37 @@
   padding: 0 1rem;
   text-align: justify;
 }
+
+@media (max-width: 768px) {
+  .Page {
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .Image {
+    max-width: 100%;
+  }
+
+  .visual {
+    width: 220px;
+    height: 160px;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .sectionTitle {
+    font-size: 1.4rem;
+  }
+
+  .sectionText {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+}

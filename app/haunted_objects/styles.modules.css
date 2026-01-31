@@ -55,3 +55,28 @@
 .card:hover .cardImage {
           transform: scale(1.02);
         }
+
+
+
+        @media (max-width: 768px) {
+  .title {
+    font-size: 1.6rem;
+    margin: 3rem 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .cardImage {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+  }
+
+  .cardTitle {
+    font-size: 0.95rem;
+  }
+}

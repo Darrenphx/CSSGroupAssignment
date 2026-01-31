@@ -144,7 +144,27 @@
 }
 
 @media (max-width: 768px) {
+  .siteName {
+    font-size: 1.4rem;
+  }
+
+  .navbar {
+    height: auto;
+    flex-wrap: wrap;
+  }
+
   .navitem {
-    font-size: 0.875rem;
+    font-size: 0.9rem;
+    padding: 0.75rem 0;
+  }
+
+  .dropdownmenu {
+    position: static; /* prevents overflow on small screens */
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .dropdownitem {
+    font-size: 0.9rem;
   }
 }
