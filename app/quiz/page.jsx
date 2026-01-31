@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./styles.module.css";
 
 const questions = [
@@ -122,6 +122,14 @@ function Quiz() {
     const[finished, setFinished] = useState(false);
     const[isCorrect, setIsCorrect] = useState(null);
     const[selectedIndex, setSelectedIndex] = useState(null);
+    const[playerName, setPlayerName] = useState("");
+    const[started, setStarted] = useState(false);
+    const[leaderboard, setLeaderboard] = useState([]);
+
+    useEffect(() => {
+        const saved = JSON.parse(localStorage.getItem("leaderboard")) || [];
+        setLeaderboard(saved);
+    }, []);
 
     const handleAnswer = (correct, index) => {
         if (!answered) {
@@ -147,20 +155,67 @@ function Quiz() {
         }
     };
 
+    if (!started) {
+        return (
+            <div className={styles.questionFormat}>
+                <h2>Are you truly prepared to tes your knowledge about the paranormal?</h2>
+                <input
+                    type="text" 
+                    value={playerName}
+                    onChange={(e) => setPlayerName(e.target.value)}
+                    placeholder="Your name"
+                />
+                <button
+                    onClick={() => {
+                        if (playerName.trim() !== "") setStarted(true);
+                    }}
+                >
+                    Start Quiz
+                </button>
+            </div>
+        );
+    }
+
     if (finished) {
+        const newEntry = { name: playerName, score };
+        const updated = [...leaderboard, newEntry].sort((a,b) => b.score - a.score);
+
+        localStorage.setItem("leaderboard", JSON.stringify(updated));
+
         return (
             <div className={styles.finished}>
                 <h2>You have reached the end of the quiz...</h2>
                 <p>Your final score is <span className={styles.scoreHighlight}>{score} / {questions.length}</span></p>
+                <div className={styles.leaderboardBox}>
+                    <h3>Leaderboard</h3>
+                    <ol>
+                        {updated.map((entry, index) => (
+                            <li key={index}>
+                                {entry.name} - {entry.score}
+                            </li>
+                        ))}
+                    </ol>
+                </div>
             </div>
         );
-    };
+    }
 
     const CurrentQuestions = questions[currentIndex];
 
     return (
-        <div className={styles.questionformat}>
+        <div className={styles.questionFormat}>
+
             <h2>Question {currentIndex + 1}</h2>
+
+            <div className={styles.progressBarContainer}>
+                <div
+                    className={styles.progressBarFill}
+                    style={{
+                        width:`${((currentIndex + 1) / questions.length) * 100}%`
+                    }}
+                />
+            </div>
+
             <p>{CurrentQuestions.question}</p>
 
             {CurrentQuestions.options.map((option, index) => {
