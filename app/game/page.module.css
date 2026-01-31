@@ -5,24 +5,17 @@
   height: 30vh;
   margin:0;
 
-  background-color: rgb(213, 68, 213);
+  background: linear-gradient(to bottom, #020617, #020617);
          
 }
 
 .pagebackground{
-  background:black;
+  background: linear-gradient(to bottom, #020617, #020617);
 }
 .background {
   min-height: 300vh;
   margin:0;
-  background: linear-gradient(
-    to bottom,
-    #000000,
-    #690303,
-    #ac1c1c93
-    
-
-  );
+  background: linear-gradient(to bottom, #020617, #020617);
 }
 
 .headerpic{
@@ -39,14 +32,15 @@
   justify-content: center;
   align-items: center;
   margin:0;
+  color:white
 }
 
 .titleheader1{
   display: flex; 
   justify-content: center; 
   align-items:  center;
-  color: white;
-  margin-top:10vh
+  color: rgb(255, 255, 255);
+  margin-top:5vh
   
 }
 
