@@ -1,8 +1,9 @@
-"use client";
 
+"use client";
+ 
 import { useState, useEffect } from "react";
 import styles from "./forumStyling.module.css";
-
+ 
 export default function ForumPage() {
   const [posts, setPosts] = useState([]);
   const [newPost, setNewPost] = useState({
@@ -14,7 +15,7 @@ export default function ForumPage() {
     author: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-
+ 
   useEffect(() => {
     const samplePosts = [
       {
@@ -56,16 +57,16 @@ export default function ForumPage() {
     ];
     setPosts(samplePosts);
   }, []);
-
+ 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!newPost.title || !newPost.content || !newPost.author) {
       alert("Please fill in all required fields");
       return;
     }
-
+ 
     setIsSubmitting(true);
-    
+   
     // Simulate API call
     setTimeout(() => {
       const newPostObj = {
@@ -75,7 +76,7 @@ export default function ForumPage() {
         comments: 0,
         timestamp: "Just now"
       };
-      
+     
       setPosts([newPostObj, ...posts]);
       setNewPost({
         title: "",
@@ -89,13 +90,13 @@ export default function ForumPage() {
       alert("Evidence submitted successfully!");
     }, 1000);
   };
-
+ 
   const handleUpvote = (id) => {
-    setPosts(posts.map(post => 
+    setPosts(posts.map(post =>
       post.id === id ? { ...post, upvotes: post.upvotes + 1 } : post
     ));
   };
-
+ 
   const evidenceTypeColors = {
     audio: "#4CAF50",
     photo: "#2196F3",
@@ -103,7 +104,7 @@ export default function ForumPage() {
     text: "#9C27B0",
     other: "#795548"
   };
-
+ 
   const evidenceTypeLabels = {
     audio: "Audio Evidence",
     photo: "Photo Evidence",
@@ -111,7 +112,7 @@ export default function ForumPage() {
     text: "Text/Story",
     other: "Other"
   };
-
+ 
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -120,7 +121,7 @@ export default function ForumPage() {
           Share and discuss paranormal evidence from Singapore and beyond
         </p>
       </div>
-
+ 
       <div className={styles.layout}>
         {/* Left Column - Post Form */}
         <div className={styles.leftColumn}>
@@ -138,7 +139,7 @@ export default function ForumPage() {
                   required
                 />
               </div>
-
+ 
               <div className={styles.formGroup}>
                 <label htmlFor="content">Description *</label>
                 <textarea
@@ -150,7 +151,7 @@ export default function ForumPage() {
                   required
                 />
               </div>
-
+ 
               <div className={styles.formRow}>
                 <div className={styles.formGroup}>
                   <label htmlFor="location">Location</label>
@@ -162,7 +163,7 @@ export default function ForumPage() {
                     placeholder="e.g., Singapore, Old Changi Hospital"
                   />
                 </div>
-
+ 
                 <div className={styles.formGroup}>
                   <label htmlFor="date">Date</label>
                   <input
@@ -173,7 +174,7 @@ export default function ForumPage() {
                   />
                 </div>
               </div>
-
+ 
               <div className={styles.formRow}>
                 <div className={styles.formGroup}>
                   <label htmlFor="evidenceType">Evidence Type</label>
@@ -187,7 +188,7 @@ export default function ForumPage() {
                     ))}
                   </select>
                 </div>
-
+ 
                 <div className={styles.formGroup}>
                   <label htmlFor="author">Your Name/Nickname *</label>
                   <input
@@ -200,16 +201,16 @@ export default function ForumPage() {
                   />
                 </div>
               </div>
-
-              <button 
-                type="submit" 
+ 
+              <button
+                type="submit"
                 className={styles.submitButton}
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Submitting..." : "Submit Evidence"}
               </button>
             </form>
-
+ 
             <div className={styles.guidelines}>
               <h3>Forum Guidelines:</h3>
               <ul>
@@ -222,7 +223,7 @@ export default function ForumPage() {
             </div>
           </div>
         </div>
-
+ 
         {/* Right Column - Posts List */}
         <div className={styles.rightColumn}>
           <div className={styles.filterBar}>
@@ -236,7 +237,7 @@ export default function ForumPage() {
               </select>
             </div>
           </div>
-
+ 
           <div className={styles.postsList}>
             {posts.length === 0 ? (
               <div className={styles.noPosts}>
@@ -246,16 +247,21 @@ export default function ForumPage() {
               posts.map(post => (
                 <div key={post.id} className={styles.postCard}>
                   <div className={styles.postHeader}>
-                    <div className={styles.evidenceTag} 
+                    <div className={styles.evidenceTag}
                          style={{backgroundColor: evidenceTypeColors[post.evidenceType]}}>
                       {evidenceTypeLabels[post.evidenceType]}
                     </div>
                     <span className={styles.timestamp}>{post.timestamp}</span>
                   </div>
-                  
+                 
                   <h3 className={styles.postTitle}>{post.title}</h3>
                   <p className={styles.postContent}>{post.content}</p>
-                  
+                  {post.evidenceType === "photo" && (
+                 <div >
+                  <img className={styles.photoEvidence} src="/photos/PhotoEvidence.png" alt="Photo Evidence" />
+                  </div>
+)}
+                 
                   <div className={styles.postMeta}>
                     <div className={styles.location}>
                       📍 {post.location || "Location not specified"}
@@ -264,13 +270,13 @@ export default function ForumPage() {
                       📅 {post.date || "Date not specified"}
                     </div>
                   </div>
-                  
+                 
                   <div className={styles.postFooter}>
                     <div className={styles.authorInfo}>
                       👤 <span className={styles.authorName}>{post.author}</span>
                     </div>
                     <div className={styles.interactions}>
-                      <button 
+                      <button
                         className={styles.upvoteButton}
                         onClick={() => handleUpvote(post.id)}
                       >
@@ -290,3 +296,4 @@ export default function ForumPage() {
     </div>
   );
 }
+ 

@@ -1,5 +1,5 @@
 "use client";
-
+import "./Singapore-BeliefsStyling.css"
 export default function SingaporeBeliefs() {
   const hauntedPlaces = [
     {
@@ -91,7 +91,7 @@ export default function SingaporeBeliefs() {
           Explore the rich tapestry of ghost stories, supernatural beliefs, and haunted locations 
           in multicultural Singapore - where Chinese, Malay, Indian, and Western traditions blend.
         </p>
-        <div className="sg-flag">🇸🇬</div>
+        <div className="sg-flag">Singapore</div>
       </div>
 
       <div className="sg-grid">
