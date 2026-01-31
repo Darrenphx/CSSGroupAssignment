@@ -305,6 +305,10 @@ return(
     <h3 className={styles.credits}> Website made by Chuansenn, Darren, Mahima and Yu Yao </h3>
     <div className={styles.ref}>
       <h2>References</h2>
+    <div>
+      <h2>Homepage:</h2>
+      <p></p>
+    </div>
 
     <div>
       <h2>Haunted objects:</h2>
