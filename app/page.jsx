@@ -389,7 +389,19 @@ return(
 
     <div>
       <h2>Ghost equipment:</h2>
-      <p></p>
+      <p>https://www.amazon.sg/Jahyshow-Magnetic-Detector-Paranormal-Equipment/dp/B07WJ46Y1P</p>
+
+
+
+<p>//https://www.ebay.com.sg/itm/193786606679</p>
+
+
+
+<p>https://www.norielgrove.com/product-p-750912.html</p>
+
+
+
+<p>https://www.vice.com/en/article/the-7-most-haunted-places-on-earth-and-why-we-keep-visiting-them/</p>
     </div>
 
     <div>
