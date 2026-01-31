@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import "./typesofghost.css";
 
 export default function Supernatural(){
     const typesOfBeings = [
@@ -41,51 +42,18 @@ export default function Supernatural(){
 
    return (
     
-    <div
-      style={{
-        minHeight: "100vh",
-        background: "linear-gradient( to bottom, #020617, #020617)",
-        paddingBottom: "4rem",
-        width:"100%",
-      }}
-    >
+    <div className="container">
       {/* Top bar */}
-      <div
-        style={{
-          height: "60px",
-          background: "linear-gradient(to right, #04214a, #888)",
-        }}
+      <div className="topBar"
       />
-      <h1 style={{
-        textAlign: "center",
-        margin: "5rem ",
-        color: "#ffffff",
-        marginBottom:"3rem",
-        fontSize: 30,
-      }}
+      <h1 className="title"
       
       >Types of Supernatural Beings</h1>
-      <ul   style={{
-         listStyle: "none",
-         padding: "0 2rem",
-         display: "grid",
-         gridTemplateColumns: "repeat(3, 1fr)",
-         gap: "2rem",
-         }}>
+      <ul className="grid">
         {typesOfBeings.map((place, index) => (
           <li
               key={index}
-              style={{
-              backgroundColor: "#1b1832",
-              marginBottom: "2rem",
-              padding: "1rem",
-              borderRadius: "8px",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",   // centers everything horizontally
-              textAlign: "center",
-              //boxShadow: "0 0 10px rgba(0,0,0,0.5)",
-            }}
+              className="card"
           >
           <Link href={`/types_of_ghosts/${place.id}`}>
               <img
@@ -93,14 +61,9 @@ export default function Supernatural(){
               alt={place.name}
               width={420}
               height={300}
-              style={{
-                      objectFit: "cover",
-                      alignItems:"center",
-                      borderRadius: "6px",
-                      cursor: "pointer",
-                    }}  />
+              className="cardImage"/>
             </Link>
-            <h2 style={{ color: "#ffffff",fontSize:"1rem", }}>{index + 1}. {place.name}</h2>
+            <h2 className="cardTitle">{index + 1}. {place.name}</h2>
           </li>
         ))}
       </ul>

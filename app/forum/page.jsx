@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-
+import styles from "./forumStyling.module.css";
 
 export default function ForumPage() {
   const [posts, setPosts] = useState([]);
